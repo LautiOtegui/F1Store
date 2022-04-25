@@ -272,6 +272,7 @@ a{
 footer{
     height: 200px;
     width: 100%;
+    margin-top: 150px;
 }
 
 .divfooter{
@@ -377,6 +378,7 @@ div ul li a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
+    justify-items: center;
     padding-top: 80px;
 }
 
@@ -408,6 +410,24 @@ div ul li a:hover{
 
 .gorra{
     padding-top: 50px;
+}
+
+.section2tienda{
+    margin-top: 150px;
+}
+
+.div2tienda{
+    display: flex;
+    justify-content: center;
+
+}
+
+.section3tienda{
+    margin-top: 150px;
+}
+
+.pnosotrostienda{
+    text-align: center;
 }
 
 .payment{
