@@ -98,35 +98,93 @@ position: relative;
 left: 150px;
 }
 
-
+.ferrari:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
 
 .redbullcap{
     position: relative;
     left: 80px;
 }
 
-
+.redbullcap:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
 
 .mercedes{
     position: relative;
     left: 80px;
 }
 
-
+.mercedes:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
 
 .remera{
     position: relative;
     right: 0px;
 }
 
-.more{
+.remera:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
+
+a{
     text-decoration: none;
-    position: relative;
-    left: 820px;
-    top: 50px;
 }
 
 
+.cta {
+    margin-top: 50px;
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 820px;
+    }
+
+    .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 10px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    }
+
+    .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+    }
+
+    .cta:hover svg {
+    transform: translateX(0);
+    }
+
+    .cta:active svg {
+    transform: scale(0.9);
+    }
+
+    .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+    }
+    
+    .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    }
+
+    .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    }
+
+    #arrow-horizontal{
+        margin-top: 30px;
+    }
 
 .section2{
     padding-top: 200px;
