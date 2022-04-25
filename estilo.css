@@ -1,0 +1,1064 @@
+*{
+    background-color: #F2EBDF;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
+    color: black;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+header{
+    height: 120px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px #333 ;
+}
+
+
+.logo{
+    float: left;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    padding-bottom: 20px;
+}
+
+span{
+    float: left;
+    display: flex;
+    padding-top: 38px;
+}
+
+.nav{
+    float: right;
+    padding-top: 25px;
+    position: relative;
+    bottom: 90px;
+}
+
+.nav ul{
+    list-style: none;
+}
+
+.nav a{
+    text-decoration: none;
+    margin-right: 15px;
+
+}
+
+.nav ul li{
+    display: inline-block;
+    color: black;
+}
+
+.nav a:hover{
+    color:#F22E52
+}
+
+/*INDEX*/
+
+
+h1{
+    background-image: url(/img/f1inicio.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    text-decoration:overline;
+    padding-top: 170px;
+    color: #F2EBDF;
+}
+
+h2{
+    text-align: center;
+}
+
+.shop{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 35px;
+}
+
+.div1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.ferrari{
+padding-left: 200px;
+}
+
+.redbullcap{
+    padding-left: 100px;
+}
+
+.mercedes{
+    padding-left: 80px;
+}
+
+.remera{
+    padding-right: 250px;
+}
+
+.more{
+    display: flex;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+.more:hover{
+    color: #F22E52;
+}
+
+.section2{
+    padding-top: 200px;
+}
+
+.h2viaje{
+    font-size: 35px
+}
+
+.pviaje{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.divideo{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.info{
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.info:hover{
+    color: #F22E52;
+}
+
+.section3{
+    margin-top: 260px;
+}
+
+.divnosotros{
+    padding-top: 150px;
+}
+
+.h2nosotros{
+    font-size: 35px;
+}
+
+.pnosotros{
+    color: white;
+    background-image: url(/img/redbullcar.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.section4{
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+.h2contacto{
+    text-align: center;
+}
+
+.pcontacto{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.divcontacto{
+    align-items: center;
+}
+
+.divcontacto p{
+    display: inline-block;
+    padding-top: 80px;
+    padding-left: 333px;
+}
+
+footer{
+    height: 200px;
+    width: 100%;
+}
+
+.divfooter{
+    text-align: center;
+    padding-right: 150px;
+}
+
+div ul{
+    display: inline-block;
+    color: black;
+    text-align: center;
+}
+
+div ul li{
+    display: inline-block;
+    margin-right: 30px;
+    text-align: center;
+    justify-items: center;
+}
+
+div ul li a{
+    list-style: none;
+    text-decoration: none;
+}
+
+div ul li a:hover{
+    color: #F22E52;
+}
+
+.logo2{
+    float: left;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.span2{
+    display: flex;
+    padding-top: 50px;
+}
+
+.h3footer{
+    display: flex;
+    display:block;
+    float: right;
+    padding-right: 250px;
+}
+
+.iconos{
+    float: right;
+    display: flex;
+    gap: 1rem;
+    font-size: 25px;
+    padding-right: 100px;
+
+}
+
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+    padding-left: 250px;
+
+}
+
+.developed{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+
+
+/*TERMINA INDEX*/
+
+
+
+/*EMPIEZA TIENDA*/
+
+.h1tienda{
+    background-image: url(/img/mercedescar.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    text-decoration:overline;
+    padding-top: 220px;
+    color: #F2EBDF;
+}
+
+.section1{
+    padding-top: 200px;
+}
+
+.shop2{
+    font-size: 35px;
+}
+
+.divtienda{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.lewis{
+    padding-left: 150px;
+}
+
+.ferrari2{
+    padding-left: 100px;
+}
+
+.bottas{
+    padding-left: 100px;
+}
+.alonso{
+    padding-top: 50px;
+    padding-left: 150px;
+}
+
+.redbull2{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.kimi{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.gorra{
+    padding-top: 50px;
+}
+
+.payment{
+    font-size: 30px;
+}
+
+.metodospago{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.div2{
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+}
+
+
+.div2 ul{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+
+}
+
+.div2 ul li{
+    margin-right: 15px;
+}
+
+.div2 ul li:hover{
+    color: #F22E52;
+}
+
+.section3{
+    padding-top: 200px;
+}
+
+.envios{
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.pnosotros2{
+    text-align: center;
+    padding-top: 30px;
+}
+
+div ul li{
+    padding-top: 100px;
+}
+
+.copyright2{
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+    padding-left: 250px;
+
+}
+
+/*TERMINA TIENDA*/
+
+/*BOTON DE SUBIR*/
+.subir{
+    height: 40px;
+    width: 40px;
+    color: #F22E52;
+    border: 1px solid black;
+    position:fixed;
+    bottom: 50px;
+    right: 150px;
+    text-align: center;
+    line-height:36px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #333 ;
+}
+/*BOTON DE SUBIR*/
+
+
+
+/*MEDIA QUERIES DESKTOP*/
+
+@media only screen and (max-width:1200px) {
+    
+    *{
+        background-color: #F2EBDF;
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+
+    }
+
+    body{
+        display: grid;
+    }
+
+    .ferrari{
+        padding-left: 50px;
+    }
+
+    .redbullcap{
+        padding-left: 0px;
+    }
+
+    .mercedes{
+        padding-left: 0px;
+    }
+
+    .remera{
+        padding-right: 0px;
+    }
+
+    .divcontacto p{
+        padding-left: 180px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES TABLET*/
+@media only screen and (max-width:768px)
+{
+    *{
+        background-color: #F2EBDF;
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+
+    }
+
+    body{
+        display: grid;
+        width: 100%;
+    }
+    
+
+    nav{
+        display: flex;
+        position: relative;
+    }
+
+    h1{
+        width: 100%;
+    }
+
+    .div1{
+        grid-gap: 1rem;
+    }
+
+    .ferrari{
+        padding-left: 0px;
+        margin-left: 250px;
+    }
+
+    .redbullcap{
+        padding-left: 0px;
+    }
+
+    .mercedes{
+        padding-left: 0px;
+    }
+
+    .remera{
+        padding-left: 0px;
+    }
+
+    .divnosotros{
+        width: 100%;;
+    }
+
+    .divfooter{
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .divcontacto{
+        padding-left: 0;
+        padding-right: 0px;
+    }
+
+    .divcontacto p{
+        padding-left: 250px;
+    }
+
+    .iconos{
+        float: none;
+        padding-right: 0;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .copyright{
+        padding-left: 0;
+    }
+}
+/* END MEDIA QUERIES TABLET*/
+
+
+
+
+
+
+/*MEDIA QUERIES TIENDA TABLET*/
+
+@media only screen and (max-width:768px) {
+    
+    
+    
+
+
+
+    .lewis{
+        padding-left: 0px;
+        width: 140px;
+        height: 180px;
+    }
+    
+    .alonso{
+        padding-left: 0px;
+        width: 140px;
+        height: 210px;
+    }
+    
+    .redbull2{
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-left: 0;
+        width: 140px;
+        height: 210px;
+    }
+
+    .ferrari2{
+        padding-left: 0px;
+        margin-left: -20px;
+        width: 160px;
+        height: 180px;
+    }
+
+    .bottas{
+        padding-left: 0px;
+        width: 160px;
+        height: 180px;
+        margin-left: -20px;
+    }
+
+    .kimi{
+        padding-left: 0px;
+        width: 160px;
+        height: 210px;
+        margin-left: -20px;
+    }
+
+    .gorra{
+        padding: 0;
+        margin-top: 50px;
+        width: 160px;
+        height: 180px;
+        margin-left: -20px;
+    }
+
+    .mercedes2{
+        width: 160px;
+        height: 180px;
+        margin-left: -20px;
+    }
+
+
+}
+
+
+
+
+
+/*MEDIA QUERIES MOBILE*/
+@media only screen and (max-width:600px)
+{
+    *{
+        background-color: #F2EBDF;
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+
+body{
+    display: grid;
+}
+
+div{
+    display: flex;
+
+}
+
+
+
+.logo{
+    float: none;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding-bottom: 0;
+
+}
+span{
+    padding-top: 5px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 8px
+
+}
+
+.nav{
+    bottom: 0;
+    font-size: 10px;
+    padding-top: 0px;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 55px;
+}  
+
+div ul li{
+    padding-top: 0;
+    margin-right: 0;
+}
+
+.nav a{
+    margin-right: 0;
+}
+
+h1{
+    font-size: 15px;
+    background-attachment: local;
+    height: 240px;
+    padding-top: 100px;
+}
+
+
+.shop{
+    margin-top: 80px;
+    font-size: 20px;
+}
+
+.div1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+
+.ferrari{
+    padding-left: 0px;
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+}
+
+.redbullcap{
+    padding-left: 0;
+    height: 100px;
+    width: 100px;
+}
+
+.mercedes{
+    padding-left: 0px;
+    padding-top: 0px;
+    height: 100px;
+    width: 100px;
+}
+
+.remera{
+    padding-right: 0;
+    height: 100px;
+    width: 100px;
+    padding-top: 0px;
+}
+
+.section2{
+    padding-top: 150px;
+}
+
+.h2viaje{
+    font-size: 25px;
+}
+
+.pviaje{
+    font-size: 10px;
+    text-align: center;
+
+}
+
+.divideo{
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe{
+    height: 180px;
+    width: 300px;
+}
+
+.section3{
+    padding-top: 0;
+    margin-top: 100px;
+}
+
+.h2nosotros{
+    font-size: 25px;
+}
+
+.pnosotros{
+    background-attachment: local;
+    font-size: 15px;
+    padding-top: 165px;
+}
+
+.divcontacto{
+    padding-right: 0;
+}
+
+.divcontacto p{
+    padding-left: 0px;
+}
+
+.divfooter{
+    flex-direction: column-reverse;
+    padding-right: 0px;
+}
+
+.logo2{
+    width: 50px;
+    height: 50px;
+    margin-left: 0px;
+}
+
+.span2{
+    padding-top: 8px;
+    font-size: 10px;
+    padding-left: 0px;
+    display: none;
+}
+
+.divfooter ul li{
+    font-size: 10px;
+    padding-left: 20px;
+}
+
+.iconos{
+    padding-top: 20px;
+    float:none;
+    justify-content: center;
+    padding-right: 0px;
+}
+
+.copyright{
+    padding-left: 79px;
+    padding-right: 100px;
+}
+
+.subir{
+    right: 15px;
+}
+
+}
+
+/* END MEDIA QUERIES MOBILE*/
+
+/* MEDIA QUERIES MOBILE TIENDA*/
+
+@media only screen and (max-width:600px)
+{
+    *{
+        background-color: #F2EBDF;
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+
+body{
+    display: grid;
+}
+
+div{
+    display: flex;
+
+}
+
+
+header{
+    height: 90px;
+}
+
+.logo{
+    float: none;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding-bottom: 0;
+
+}
+span{
+    padding-top: 5px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 8px
+
+}
+
+.nav{
+    bottom: 0;
+    font-size: 10px;
+    padding-top: 0px;
+    padding-left: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}  
+
+div ul li{
+    padding-top: 0;
+    margin-right: 0;
+}
+
+.nav a{
+    margin-right: 0;
+}
+
+.h1tienda{
+    font-size: 15px;
+    background-attachment: local;
+    height: 240px;
+    padding-top: 100px;
+
+}
+
+.section1{
+    padding-top: 100px;
+}
+.shop2{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.divtienda{
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.lewis{
+    padding-left: 0px;
+    width: 60px;
+    height: 60px;
+}
+
+.alonso{
+    padding-left: 0px;
+    padding-top: 0px;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.bottas{
+    padding-left: 0px;
+    width: 60px;
+    height: 60px;
+}
+
+.ferrari2{
+    padding-left: 0px;
+    width: 60px;
+    height: 60px;
+
+}
+
+.kimi{
+    padding-left: 0px;
+    width: 60px;
+    height: 60px;
+    padding-top: 0px;
+    margin-top: 10px;
+}
+
+.gorra{
+    padding-left: 0px;
+    width: 60px;
+    height: 60px;
+    padding-top: 0px;
+    margin-top: 10px;
+}
+
+.mercedes2{
+    padding-left: 0px;
+    padding-top: 0px;
+    width: 60px;
+    height: 60px;
+    padding-top: 0px;
+
+}
+
+.redbull2{
+    padding-right: 0;
+    height:60px;
+    width: 60px;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-top: 10px;
+}
+
+.section2{
+    padding-top: 150px;
+}
+
+.h2viaje{
+    font-size: 25px;
+}
+
+.pviaje{
+    font-size: 10px;
+    text-align: center;
+
+}
+
+.divideo{
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe{
+    height: 180px;
+    width: 300px;
+}
+
+.section3{
+    padding-top: 0;
+    margin-top: 100px;
+}
+
+.h2nosotros{
+    font-size: 25px;
+}
+
+.pnosotros{
+    background-attachment: local;
+    font-size: 15px;
+    padding-top: 165px;
+}
+
+.divcontacto{
+    padding-right: 0;
+}
+
+.divcontacto p{
+    padding-left: 0px;
+}
+
+.divfooter{
+    flex-direction: column-reverse;
+    padding-right: 0px;
+}
+
+.logo2{
+    width: 50px;
+    height: 50px;
+    margin-left: 0px;
+}
+
+.span2{
+    padding-top: 8px;
+    font-size: 10px;
+    padding-left: 0px;
+    display: none;
+}
+
+.divfooter ul li{
+    font-size: 10px;
+    padding-left: 20px;
+}
+
+.iconos{
+    padding-top: 20px;
+    float:none;
+    justify-content: center;
+    padding-right: 0px;
+}
+
+.copyright2{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.subir{
+    right: 15px;
+}
+
+}
+
+/* END MEDIA QUERIES MOBILE TIENDA*/
+
