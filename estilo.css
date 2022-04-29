@@ -460,6 +460,7 @@ div ul li a:hover{
 .div2tienda{
     display: flex;
     justify-content: center;
+    margin-bottom: 150px;
 
 }
 
@@ -513,7 +514,9 @@ div ul li a:hover{
         height: 100%;
 }
 
-
+.carousel-indicators {
+    z-index: 0;
+}
 
 .envios{
     font-size: 30px;
@@ -543,7 +546,7 @@ div ul li{
 .subir{
     height: 40px;
     width: 40px;
-    color: #F22E52;
+    color: #ffffff;
     border: 1px solid black;
     position:fixed;
     bottom: 60px;
