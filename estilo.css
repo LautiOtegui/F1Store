@@ -22,14 +22,15 @@ header{
 
 
 .logo{
+    position: relative;
     float: left;
     display: flex;
     width: 100px;
     height: 100px;
-    padding-bottom: 20px;
+    bottom: 0.6rem;
 }
 
-span{
+#store1{
     float: left;
     display: flex;
     padding-top: 38px;
@@ -71,6 +72,7 @@ h1{
     width: 100%;
     height: 400px;
     text-align: center;
+    text-shadow: 0 0 5px black;
     text-decoration:overline;
     padding-top: 170px;
     color: #F2EBDF;
@@ -86,6 +88,10 @@ h2{
     font-size: 35px;
 }
 
+a{
+    color: black;
+}
+
 .div1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -93,11 +99,10 @@ h2{
     padding-top: 80px;
 }
 
-.ferrari{
+    .ferrari{
 position: relative;
 left: 150px;
 }
-
 .ferrari:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
 
 .redbullcap{
@@ -130,10 +135,7 @@ a{
     margin-top: 50px;
     border: none;
     background: none;
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-left: 820px;
     }
 
@@ -183,7 +185,7 @@ a{
     }
 
     #arrow-horizontal{
-        margin-top: 30px;
+        margin-top: 0px;
     }
 
 .section2{
@@ -275,6 +277,8 @@ footer{
     margin-top: 150px;
 }
 
+
+
 .divfooter{
     text-align: center;
     padding-right: 150px;
@@ -304,14 +308,16 @@ div ul li a:hover{
 
 .logo2{
     float: left;
-    display: flex;
     width: 100px;
     height: 100px;
-    margin-left: 50px;
+    position: relative;
+    left: 2rem;
+    top: 3.2rem;
 }
 
 .span2{
-    display: flex;
+    position: relative;
+    right: 30rem;
     padding-top: 50px;
 }
 
@@ -328,7 +334,8 @@ div ul li a:hover{
     gap: 1rem;
     font-size: 25px;
     padding-right: 100px;
-
+    position: relative;
+    bottom: 2.6rem;
 }
 
 
@@ -498,7 +505,7 @@ div ul li{
     color: #F22E52;
     border: 1px solid black;
     position:fixed;
-    bottom: 50px;
+    bottom: 60px;
     right: 150px;
     text-align: center;
     line-height:36px;
