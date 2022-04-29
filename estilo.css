@@ -373,6 +373,11 @@ div ul li a:hover{
     color: #F2EBDF;
 }
 
+#store2{
+    float: left;
+    display: flex;
+    padding-top: 38px;
+}
 .section1{
     padding-top: 200px;
 }
@@ -390,37 +395,66 @@ div ul li a:hover{
 }
 
 .lewis{
-    padding-left: 150px;
+    left: 50px;
+    position: relative;
 }
+
+.lewis:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
 
 .ferrari2{
-    padding-left: 100px;
+    left: 0px;
+    position: relative;
 }
+
+.ferrari2:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
 
 .bottas{
-    padding-left: 100px;
+    left: 0px;
+    position: relative;
 }
+
+.bottas:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
+
 .alonso{
-    padding-top: 50px;
-    padding-left: 150px;
+    top: 80px;
+    left: 50px;
+    position: relative;
 }
+
+.alonso:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
 
 .redbull2{
-    padding-top: 50px;
-    padding-left: 100px;
+    top: 80px;
+    position: relative;
 }
+
+.redbull2:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
+
+.mercedes{
+    position: relative;
+    left: 0px;
+}
+
+.mercedes:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
 
 .kimi{
-    padding-top: 50px;
-    padding-left: 100px;
+    top: 80px;
+    left: 0px;
+    position: relative;
 }
 
+.kimi:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
+
 .gorra{
-    padding-top: 50px;
+    top: 80px;
+    position: relative;
 }
+
+.gorra:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
 
 .section2tienda{
     margin-top: 150px;
+    position: relative;
 }
 
 .div2tienda{
@@ -473,6 +507,13 @@ div ul li a:hover{
 .section3{
     padding-top: 200px;
 }
+
+.carousel-inner img{
+        width: 100%;
+        height: 100%;
+}
+
+
 
 .envios{
     font-size: 30px;
