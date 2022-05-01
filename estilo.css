@@ -1,174 +1,167 @@
-*{
-    background-color: #F2EBDF;
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Jura', sans-serif;
-    color: black;
-    
+    ;
+
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-
-header{
-    height: 120px;
-    width: 100%;
-    padding: 20px;
-    box-shadow: 0 0 10px #333 ;
-}
-
-
-.logo{
-    position: relative;
-    float: left;
-    display: flex;
-    width: 100px;
-    height: 100px;
-    bottom: 0.6rem;
-}
-
-#store1{
-    float: left;
-    display: flex;
-    padding-top: 38px;
-}
-
-.nav{
-    float: right;
-    padding-top: 25px;
-    position: relative;
-    bottom: 90px;
-}
-
-.nav ul{
-    list-style: none;
-}
-
-.nav a{
-    text-decoration: none;
-    margin-right: 15px;
-
-}
-
-.nav ul li{
-    display: inline-block;
-    color: black;
-}
-
-.nav a:hover{
-    color:#F22E52
-}
-
 /*INDEX*/
-
-
-h1{
-    background-image: url(/img/f1inicio.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+.showcase {
+    position: absolute;
+    right: 0;
     width: 100%;
     height: 400px;
-    text-align: center;
-    text-shadow: 0 0 5px black;
-    text-decoration:overline;
-    padding-top: 170px;
+    align-items: center;
+    background: black;
+    z-index: 2;
+    display: inline-block;
+}
+
+.showcase header {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.45;
+
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1);
+}
+
+.logo {
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    left: 1.25rem;
+}
+
+#store1 {
+    position: relative;
+    top: 0.5rem;
+    left: 1.25rem;
     color: #F2EBDF;
 }
 
-h2{
+
+h1 {
     text-align: center;
-}
-
-.shop{
-    text-align: center;
-    margin-top: 150px;
-    font-size: 35px;
-}
-
-a{
-    color: black;
-    text-decoration: none;
-    font-display: none;
-}
-
-.div1{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    padding-top: 80px;
-}
-
-    .ferrari{
-position: relative;
-left: 150px;
-}
-.ferrari:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
-
-.redbullcap{
     position: relative;
-    left: 80px;
+    color: #F2EBDF;
+    top: 10rem;
 }
+
+nav {
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
+    gap: 5.1rem;
+}
+
+ul li {
+    list-style: none;
+    position: relative;
+    left: 1rem;
+}
+
+nav ul li a:hover{
+    color: #F2EBDF;
+    text-decoration: none
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    color: #F2EBDF;
+}
+
+.tienda {
+    position: relative;
+    top: 25rem;
+    background-color: #F2EBDF;
+    height: 39.375rem;
+}
+
+.ferrari:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
 
 .redbullcap:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
 
-.mercedes{
-    position: relative;
-    left: 80px;
-}
-
 .mercedes:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
-
-.remera{
-    position: relative;
-    right: 0px;
-}
 
 .remera:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
 
-a{
-    text-decoration: none;
+button{
+    text-align: center;
+    display: flex;
 }
 
-
 .cta {
-    margin-top: 50px;
     border: none;
     background: none;
-    flex-direction: row;
-    margin-left: 820px;
-    }
+    position: relative;
+    top: 10rem;
+    color: #000000;
+    left: 51rem;
 
-    .cta span {
+}
+
+.cta span {
     padding-bottom: 7px;
     letter-spacing: 4px;
     font-size: 10px;
     padding-right: 15px;
     text-transform: uppercase;
-    }
+}
 
-    .cta svg {
+.cta svg {
     transform: translateX(-8px);
     transition: all 0.3s ease;
-    }
+}
 
-    .cta:hover svg {
+.cta:hover svg {
     transform: translateX(0);
-    }
+}
 
-    .cta:active svg {
+.cta:active svg {
     transform: scale(0.9);
-    }
+}
 
-    .hover-underline-animation {
+.hover-underline-animation {
     position: relative;
     color: black;
     padding-bottom: 20px;
-    }
-    
-    .hover-underline-animation:after {
+}
+
+.hover-underline-animation:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -179,67 +172,63 @@ a{
     background-color: #000000;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-    }
+}
 
-    .cta:hover .hover-underline-animation:after {
+.cta:hover .hover-underline-animation:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-    }
-
-    #arrow-horizontal{
-        margin-top: 0px;
-    }
-
-.section2{
-    padding-top: 200px;
 }
 
-.h2viaje{
-    font-size: 35px
+.div1 {
+    position: relative;
+    top: 8rem;
+    display: flex;
+    justify-content: space-around;
 }
 
-.pviaje{
+h2 {
+    text-align: center;
+    position: relative;
+    font-size: 2.4rem;
+    top: 3rem;
+}
+
+.section2 {
+    position: relative;
+    top: 25rem;
+    background-color: #F2EBDF;
+    height: 39rem;
+}
+
+.pviaje {
+    position: relative;
+    top: 5.5rem;
+    text-align: center;
+
+}
+
+.divideo {
     display: flex;
     justify-content: center;
-    padding-top: 80px;
+    position: relative;
+    top: 7rem;
 }
 
-.divideo{
-    padding-top: 100px;
-    display: flex;
-    justify-content: center;
-    
-
+.section3 {
+    position: relative;
+    top: 25rem;
+    background-color: #F2EBDF;
+    height: 39rem;
 }
 
-.info{
-    padding-top: 150px;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    text-decoration: none;
-    
+.h2nosotros {
+    position: relative;
+    top: 8rem;
+    color: #F2EBDF;
 }
 
-.info:hover{
-    color: #F22E52;
-    
-}
-
-.section3{
-    margin-top: 260px;
-}
-
-.divnosotros{
-    padding-top: 150px;
-}
-
-.h2nosotros{
-    font-size: 35px;
-}
-
-.pnosotros{
-    color: white;
+.pnosotros {
+    color: #F2EBDF;
     background-image: url(/img/redbullcar.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -249,113 +238,32 @@ a{
     padding-top: 200px;
 }
 
-.section4{
-    margin-top: 150px;
-    margin-bottom: 200px;
-}
-
-.h2contacto{
-    text-align: center;
-}
-
-.pcontacto{
-    text-align: center;
-    padding-top: 20px;
-}
-
-.divcontacto{
-    align-items: center;
-}
-
-.divcontacto p{
-    display: inline-block;
-    padding-top: 80px;
-    padding-left: 333px;
-}
-
-footer{
-    height: 200px;
-    width: 100%;
-    margin-top: 150px;
-}
-
-
-
-.divfooter{
-    text-align: center;
-    padding-right: 150px;
-}
-
-div ul{
-    display: inline-block;
-    color: black;
-    text-align: center;
-}
-
-div ul li{
-    display: inline-block;
-    margin-right: 30px;
-    text-align: center;
-    justify-items: center;
-}
-
-div ul li a{
-    list-style: none;
-    text-decoration: none;
-}
-
-div ul li a:hover{
-    color: #F22E52;
-}
-
-.logo2{
-    float: left;
-    width: 100px;
-    height: 100px;
+.section4 {
     position: relative;
-    left: 2rem;
-    top: 3.2rem;
+    top: 25rem;
+    height: 28rem;
+    background-color: #F2EBDF;
 }
 
-.span2{
+.pcontacto {
     position: relative;
-    right: 30rem;
-    padding-top: 50px;
+    top: 4rem;
+    text-align: center;
 }
 
-.h3footer{
+.divcontacto {
     display: flex;
-    display:block;
-    float: right;
-    padding-right: 250px;
-}
-
-.iconos{
-    float: right;
-    display: flex;
-    gap: 1rem;
-    font-size: 25px;
-    padding-right: 100px;
     position: relative;
-    bottom: 2.6rem;
-}
-
-
-.copyright{
-    display: flex;
+    top: 6rem;
     justify-content: center;
-    padding-top: 300px;
-    padding-left: 250px;
-
+    gap: 8rem;
 }
 
-.developed{
-    display: flex;
-    justify-content: center;
-    padding-top: 100px;
-
+footer {
+    position: relative;
+    top: 25rem;
+    background-color: #F2EBDF;
 }
-
 
 /*TERMINA INDEX*/
 
@@ -363,200 +271,28 @@ div ul li a:hover{
 
 /*EMPIEZA TIENDA*/
 
-.h1tienda{
-    background-image: url(/img/mercedescar.jpg);
-    background-size: cover;
-    background-attachment:fixed;
-    width: 100%;
-    height: 500px;
-    text-align: center;
-    text-decoration:overline;
-    padding-top: 220px;
-    color: #F2EBDF;
-}
 
-#store2{
-    float: left;
-    display: flex;
-    padding-top: 38px;
-}
-.section1{
-    padding-top: 200px;
-}
-
-.shop2{
-    font-size: 35px;
-}
-
-.divtienda{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    justify-items: center;
-    padding-top: 80px;
-}
-
-.lewis{
-    left: 50px;
-    position: relative;
-}
-
-.lewis:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
-
-.ferrari2{
-    left: 0px;
-    position: relative;
-}
-
-.ferrari2:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
-
-.bottas{
-    left: 0px;
-    position: relative;
-}
-
-.bottas:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
-
-.alonso{
-    top: 80px;
-    left: 50px;
-    position: relative;
-}
-
-.alonso:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
-
-.redbull2{
-    top: 80px;
-    position: relative;
-}
-
-.redbull2:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
-
-.mercedes{
-    position: relative;
-    left: 0px;
-}
-
-.mercedes:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
-
-.kimi{
-    top: 80px;
-    left: 0px;
-    position: relative;
-}
-
-.kimi:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
-
-.gorra{
-    top: 80px;
-    position: relative;
-}
-
-.gorra:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
-
-.section2tienda{
-    margin-top: 150px;
-    position: relative;
-}
-
-.div2tienda{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 150px;
-
-}
-
-.section3tienda{
-    margin-top: 150px;
-}
-
-.pnosotrostienda{
-    text-align: center;
-}
-
-.payment{
-    font-size: 30px;
-}
-
-.metodospago{
-    text-align: center;
-    padding-top: 50px;
-}
-
-.div2{
-    display: flex;
-    padding-top: 50px;
-    flex-direction: column;
-}
-
-
-.div2 ul{
-    display: inline-block;
-    text-decoration: none;
-    list-style: none;
-    text-transform: uppercase;
-
-}
-
-.div2 ul li{
-    margin-right: 15px;
-}
-
-.div2 ul li:hover{
-    color: #F22E52;
-    
-}
-
-.section3{
-    padding-top: 200px;
-}
-
-.carousel-inner img{
-        width: 100%;
-        height: 100%;
-}
-
-.carousel-indicators {
-    z-index: 0;
-}
-
-.envios{
-    font-size: 30px;
-    padding-bottom: 50px;
-}
-
-.pnosotros2{
-    text-align: center;
-    padding-top: 30px;
-}
-
-div ul li{
-    padding-top: 100px;
-}
-
-.copyright2{
-    display: flex;
-    justify-content: center;
-    padding-top: 300px;
-    padding-left: 250px;
-
-}
 
 /*TERMINA TIENDA*/
 
 /*BOTON DE SUBIR*/
-.subir{
+.subir {
     height: 40px;
     width: 40px;
-    color: #ffffff;
+    color: black;
     border: 1px solid black;
-    position:fixed;
+    position: fixed;
     bottom: 60px;
     right: 150px;
     text-align: center;
-    line-height:36px;
+    line-height: 36px;
     border-radius: 50px;
-    box-shadow: 0 0 10px #333 ;
+    box-shadow: 0 0 10px #333;
+    background-color: #F2EBDF;
+}
+
+.subir:hover{
+    color: black;
 }
 /*BOTON DE SUBIR*/
 
@@ -565,8 +301,8 @@ div ul li{
 /*MEDIA QUERIES DESKTOP*/
 
 @media only screen and (max-width:1100px) {
-    
-    *{
+
+    * {
         background-color: #F2EBDF;
         margin: 0%;
         padding: 0%;
@@ -574,27 +310,27 @@ div ul li{
 
     }
 
-    body{
+    body {
         display: grid;
     }
 
-    .ferrari{
+    .ferrari {
         padding-left: 50px;
     }
 
-    .redbullcap{
+    .redbullcap {
         padding-left: 0px;
     }
 
-    .mercedes{
+    .mercedes {
         padding-left: 0px;
     }
 
-    .remera{
+    .remera {
         padding-right: 0px;
     }
 
-    .divcontacto p{
+    .divcontacto p {
         padding-left: 180px;
     }
 
@@ -615,9 +351,8 @@ div ul li{
 
 
 /*MEDIA QUERIES TABLET*/
-@media only screen and (max-width:768px)
-{
-    *{
+@media only screen and (max-width:768px) {
+    * {
         background-color: #F2EBDF;
         margin: 0%;
         padding: 0%;
@@ -625,63 +360,64 @@ div ul li{
 
     }
 
-    body{
+    body {
         display: grid;
         width: 100%;
     }
-    
 
-    nav{
+
+    nav {
         display: flex;
         position: relative;
     }
 
-    h1{
+    h1 {
         width: 100%;
     }
 
-    .div1{
+    .div1 {
         grid-gap: 1rem;
     }
 
-    .ferrari{
+    .ferrari {
         padding-left: 0px;
         margin-left: 250px;
     }
 
-    .redbullcap{
+    .redbullcap {
         padding-left: 0px;
     }
 
-    .mercedes{
+    .mercedes {
         padding-left: 0px;
     }
 
-    .remera{
+    .remera {
         padding-left: 0px;
     }
 
-    .divnosotros{
-        width: 100%;;
+    .divnosotros {
+        width: 100%;
+        ;
     }
 
-    .divfooter{
+    .divfooter {
         justify-content: center;
         align-items: center;
     }
 
 
 
-    .divcontacto{
+    .divcontacto {
         padding-left: 0;
         padding-right: 0px;
     }
 
-    .divcontacto p{
+    .divcontacto p {
         padding-left: 250px;
     }
 
-    .iconos{
+    .iconos {
         float: none;
         padding-right: 0;
         display: flex;
@@ -689,10 +425,11 @@ div ul li{
         padding-top: 20px;
     }
 
-    .copyright{
+    .copyright {
         padding-left: 0;
     }
 }
+
 /* END MEDIA QUERIES TABLET*/
 
 
@@ -703,25 +440,25 @@ div ul li{
 /*MEDIA QUERIES TIENDA TABLET*/
 
 @media only screen and (max-width:768px) {
-    
-    
-    
 
 
 
-    .lewis{
+
+
+
+    .lewis {
         padding-left: 0px;
         width: 140px;
         height: 180px;
     }
-    
-    .alonso{
+
+    .alonso {
         padding-left: 0px;
         width: 140px;
         height: 210px;
     }
-    
-    .redbull2{
+
+    .redbull2 {
         margin-top: 0px;
         margin-left: 0px;
         padding-left: 0;
@@ -729,28 +466,28 @@ div ul li{
         height: 210px;
     }
 
-    .ferrari2{
+    .ferrari2 {
         padding-left: 0px;
         margin-left: -20px;
         width: 160px;
         height: 180px;
     }
 
-    .bottas{
+    .bottas {
         padding-left: 0px;
         width: 160px;
         height: 180px;
         margin-left: -20px;
     }
 
-    .kimi{
+    .kimi {
         padding-left: 0px;
         width: 160px;
         height: 210px;
         margin-left: -20px;
     }
 
-    .gorra{
+    .gorra {
         padding: 0;
         margin-top: 50px;
         width: 160px;
@@ -758,7 +495,7 @@ div ul li{
         margin-left: -20px;
     }
 
-    .mercedes2{
+    .mercedes2 {
         width: 160px;
         height: 180px;
         margin-left: -20px;
@@ -772,9 +509,8 @@ div ul li{
 
 
 /*MEDIA QUERIES MOBILE*/
-@media only screen and (max-width:600px)
-{
-    *{
+@media only screen and (max-width:600px) {
+    * {
         background-color: #F2EBDF;
         margin: 0%;
         padding: 0%;
@@ -782,185 +518,185 @@ div ul li{
     }
 
 
-body{
-    display: grid;
-}
+    body {
+        display: grid;
+    }
 
-div{
-    display: flex;
+    div {
+        display: flex;
 
-}
-
-
-
-.logo{
-    float: none;
-    display: flex;
-    width: 50px;
-    height: 50px;
-    padding-bottom: 0;
-
-}
-span{
-    padding-top: 5px;
-    padding-left: 0px;
-    display: flex;
-    align-items: center;
-    font-size: 8px
-
-}
-
-.nav{
-    bottom: 0;
-    font-size: 10px;
-    padding-top: 0px;
-    display: inline-flex;
-    align-items: center;
-    padding-left: 55px;
-}  
-
-div ul li{
-    padding-top: 0;
-    margin-right: 0;
-}
-
-.nav a{
-    margin-right: 0;
-}
-
-h1{
-    font-size: 15px;
-    background-attachment: local;
-    height: 240px;
-    padding-top: 100px;
-}
+    }
 
 
-.shop{
-    margin-top: 80px;
-    font-size: 20px;
-}
 
-.div1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-}
+    .logo {
+        float: none;
+        display: flex;
+        width: 50px;
+        height: 50px;
+        padding-bottom: 0;
+
+    }
+
+    span {
+        padding-top: 5px;
+        padding-left: 0px;
+        display: flex;
+        align-items: center;
+        font-size: 8px
+    }
+
+    .nav {
+        bottom: 0;
+        font-size: 10px;
+        padding-top: 0px;
+        display: inline-flex;
+        align-items: center;
+        padding-left: 55px;
+    }
+
+    div ul li {
+        padding-top: 0;
+        margin-right: 0;
+    }
+
+    .nav a {
+        margin-right: 0;
+    }
+
+    h1 {
+        font-size: 15px;
+        background-attachment: local;
+        height: 240px;
+        padding-top: 100px;
+    }
 
 
-.ferrari{
-    padding-left: 0px;
-    height: 100px;
-    width: 100px;
-    margin-left: 10px;
-}
+    .shop {
+        margin-top: 80px;
+        font-size: 20px;
+    }
 
-.redbullcap{
-    padding-left: 0;
-    height: 100px;
-    width: 100px;
-}
+    .div1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
 
-.mercedes{
-    padding-left: 0px;
-    padding-top: 0px;
-    height: 100px;
-    width: 100px;
-}
 
-.remera{
-    padding-right: 0;
-    height: 100px;
-    width: 100px;
-    padding-top: 0px;
-}
+    .ferrari {
+        padding-left: 0px;
+        height: 100px;
+        width: 100px;
+        margin-left: 10px;
+    }
 
-.section2{
-    padding-top: 150px;
-}
+    .redbullcap {
+        padding-left: 0;
+        height: 100px;
+        width: 100px;
+    }
 
-.h2viaje{
-    font-size: 25px;
-}
+    .mercedes {
+        padding-left: 0px;
+        padding-top: 0px;
+        height: 100px;
+        width: 100px;
+    }
 
-.pviaje{
-    font-size: 10px;
-    text-align: center;
+    .remera {
+        padding-right: 0;
+        height: 100px;
+        width: 100px;
+        padding-top: 0px;
+    }
 
-}
+    .section2 {
+        padding-top: 150px;
+    }
 
-.divideo{
-    flex-direction: column;
-    align-items: center;
-}
+    .h2viaje {
+        font-size: 25px;
+    }
 
-iframe{
-    height: 180px;
-    width: 300px;
-}
+    .pviaje {
+        font-size: 10px;
+        text-align: center;
 
-.section3{
-    padding-top: 0;
-    margin-top: 100px;
-}
+    }
 
-.h2nosotros{
-    font-size: 25px;
-}
+    .divideo {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.pnosotros{
-    background-attachment: local;
-    font-size: 15px;
-    padding-top: 165px;
-}
+    iframe {
+        height: 180px;
+        width: 300px;
+    }
 
-.divcontacto{
-    padding-right: 0;
-}
+    .section3 {
+        padding-top: 0;
+        margin-top: 100px;
+    }
 
-.divcontacto p{
-    padding-left: 0px;
-}
+    .h2nosotros {
+        font-size: 25px;
+    }
 
-.divfooter{
-    flex-direction: column-reverse;
-    padding-right: 0px;
-}
+    .pnosotros {
+        background-attachment: local;
+        font-size: 15px;
+        padding-top: 165px;
+    }
 
-.logo2{
-    width: 50px;
-    height: 50px;
-    margin-left: 0px;
-}
+    .divcontacto {
+        padding-right: 0;
+    }
 
-.span2{
-    padding-top: 8px;
-    font-size: 10px;
-    padding-left: 0px;
-    display: none;
-}
+    .divcontacto p {
+        padding-left: 0px;
+    }
 
-.divfooter ul li{
-    font-size: 10px;
-    padding-left: 20px;
-}
+    .divfooter {
+        flex-direction: column-reverse;
+        padding-right: 0px;
+    }
 
-.iconos{
-    padding-top: 20px;
-    float:none;
-    justify-content: center;
-    padding-right: 0px;
-}
+    .logo2 {
+        width: 50px;
+        height: 50px;
+        margin-left: 0px;
+    }
 
-.copyright{
-    padding-left: 79px;
-    padding-right: 100px;
-}
+    .span2 {
+        padding-top: 8px;
+        font-size: 10px;
+        padding-left: 0px;
+        display: none;
+    }
 
-.subir{
-    right: 15px;
-}
+    .divfooter ul li {
+        font-size: 10px;
+        padding-left: 20px;
+    }
+
+    .iconos {
+        padding-top: 20px;
+        float: none;
+        justify-content: center;
+        padding-right: 0px;
+    }
+
+    .copyright {
+        padding-left: 79px;
+        padding-right: 100px;
+    }
+
+    .subir {
+        right: 15px;
+    }
 
 }
 
@@ -968,9 +704,8 @@ iframe{
 
 /* MEDIA QUERIES MOBILE TIENDA*/
 
-@media only screen and (max-width:600px)
-{
-    *{
+@media only screen and (max-width:600px) {
+    * {
         background-color: #F2EBDF;
         margin: 0%;
         padding: 0%;
@@ -978,233 +713,249 @@ iframe{
     }
 
 
-body{
-    display: grid;
+    body {
+        display: grid;
+    }
+
+    div {
+        display: flex;
+
+    }
+
+
+    header {
+        height: 90px;
+    }
+
+    .logo {
+        float: none;
+        display: flex;
+        width: 50px;
+        height: 50px;
+        padding-bottom: 0;
+
+    }
+
+    span {
+        padding-top: 5px;
+        padding-left: 0px;
+        display: flex;
+        align-items: center;
+        font-size: 8px
+    }
+
+    .nav {
+        bottom: 0;
+        font-size: 10px;
+        padding-top: 0px;
+        padding-left: 50px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div ul li {
+        padding-top: 0;
+        margin-right: 0;
+    }
+
+    .nav a {
+        margin-right: 0;
+    }
+
+    .h1tienda {
+        font-size: 15px;
+        background-attachment: local;
+        height: 240px;
+        padding-top: 100px;
+
+    }
+
+    .section1 {
+        padding-top: 100px;
+    }
+
+    .shop2 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .divtienda {
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lewis {
+        padding-left: 0px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .alonso {
+        padding-left: 0px;
+        padding-top: 0px;
+        margin-top: 10px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .bottas {
+        padding-left: 0px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .ferrari2 {
+        padding-left: 0px;
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .kimi {
+        padding-left: 0px;
+        width: 60px;
+        height: 60px;
+        padding-top: 0px;
+        margin-top: 10px;
+    }
+
+    .gorra {
+        padding-left: 0px;
+        width: 60px;
+        height: 60px;
+        padding-top: 0px;
+        margin-top: 10px;
+    }
+
+    .mercedes2 {
+        padding-left: 0px;
+        padding-top: 0px;
+        width: 60px;
+        height: 60px;
+        padding-top: 0px;
+
+    }
+
+    .redbull2 {
+        padding-right: 0;
+        height: 60px;
+        width: 60px;
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-top: 10px;
+    }
+
+    .section2 {
+        padding-top: 150px;
+    }
+
+    .h2viaje {
+        font-size: 25px;
+    }
+
+    .pviaje {
+        font-size: 10px;
+        text-align: center;
+
+    }
+
+    .divideo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe {
+        height: 180px;
+        width: 300px;
+    }
+
+    .section3 {
+        padding-top: 0;
+        margin-top: 100px;
+    }
+
+    .h2nosotros {
+        font-size: 25px;
+    }
+
+    .pnosotros {
+        background-attachment: local;
+        font-size: 15px;
+        padding-top: 165px;
+    }
+
+    .divcontacto {
+        padding-right: 0;
+    }
+
+    .divcontacto p {
+        padding-left: 0px;
+    }
+
+    .divfooter {
+        flex-direction: column-reverse;
+        padding-right: 0px;
+    }
+
+    .logo2 {
+        width: 50px;
+        height: 50px;
+        margin-left: 0px;
+    }
+
+    .span2 {
+        padding-top: 8px;
+        font-size: 10px;
+        padding-left: 0px;
+        display: none;
+    }
+
+    .divfooter ul li {
+        font-size: 10px;
+        padding-left: 20px;
+    }
+
+    .iconos {
+        padding-top: 20px;
+        float: none;
+        justify-content: center;
+        padding-right: 0px;
+    }
+
+    .copyright2 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .subir {
+        right: 15px;
+    }
+
 }
 
-div{
-    display: flex;
 
+@-webkit-keyframes shadow-drop-center {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 transparent;
+        box-shadow: 0 0 0 0 transparent
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35);
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35)
+    }
 }
 
+@keyframes shadow-drop-center {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 transparent;
+        box-shadow: 0 0 0 0 transparent
+    }
 
-header{
-    height: 90px;
+    100% {
+        -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35);
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35)
+    }
 }
-
-.logo{
-    float: none;
-    display: flex;
-    width: 50px;
-    height: 50px;
-    padding-bottom: 0;
-
-}
-span{
-    padding-top: 5px;
-    padding-left: 0px;
-    display: flex;
-    align-items: center;
-    font-size: 8px
-
-}
-
-.nav{
-    bottom: 0;
-    font-size: 10px;
-    padding-top: 0px;
-    padding-left: 50px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}  
-
-div ul li{
-    padding-top: 0;
-    margin-right: 0;
-}
-
-.nav a{
-    margin-right: 0;
-}
-
-.h1tienda{
-    font-size: 15px;
-    background-attachment: local;
-    height: 240px;
-    padding-top: 100px;
-
-}
-
-.section1{
-    padding-top: 100px;
-}
-.shop2{
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-.divtienda{
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.lewis{
-    padding-left: 0px;
-    width: 60px;
-    height: 60px;
-}
-
-.alonso{
-    padding-left: 0px;
-    padding-top: 0px;
-    margin-top: 10px;
-    width: 60px;
-    height: 60px;
-}
-
-.bottas{
-    padding-left: 0px;
-    width: 60px;
-    height: 60px;
-}
-
-.ferrari2{
-    padding-left: 0px;
-    width: 60px;
-    height: 60px;
-
-}
-
-.kimi{
-    padding-left: 0px;
-    width: 60px;
-    height: 60px;
-    padding-top: 0px;
-    margin-top: 10px;
-}
-
-.gorra{
-    padding-left: 0px;
-    width: 60px;
-    height: 60px;
-    padding-top: 0px;
-    margin-top: 10px;
-}
-
-.mercedes2{
-    padding-left: 0px;
-    padding-top: 0px;
-    width: 60px;
-    height: 60px;
-    padding-top: 0px;
-
-}
-
-.redbull2{
-    padding-right: 0;
-    height:60px;
-    width: 60px;
-    padding-top: 0px;
-    padding-left: 0px;
-    margin-top: 10px;
-}
-
-.section2{
-    padding-top: 150px;
-}
-
-.h2viaje{
-    font-size: 25px;
-}
-
-.pviaje{
-    font-size: 10px;
-    text-align: center;
-
-}
-
-.divideo{
-    flex-direction: column;
-    align-items: center;
-}
-
-iframe{
-    height: 180px;
-    width: 300px;
-}
-
-.section3{
-    padding-top: 0;
-    margin-top: 100px;
-}
-
-.h2nosotros{
-    font-size: 25px;
-}
-
-.pnosotros{
-    background-attachment: local;
-    font-size: 15px;
-    padding-top: 165px;
-}
-
-.divcontacto{
-    padding-right: 0;
-}
-
-.divcontacto p{
-    padding-left: 0px;
-}
-
-.divfooter{
-    flex-direction: column-reverse;
-    padding-right: 0px;
-}
-
-.logo2{
-    width: 50px;
-    height: 50px;
-    margin-left: 0px;
-}
-
-.span2{
-    padding-top: 8px;
-    font-size: 10px;
-    padding-left: 0px;
-    display: none;
-}
-
-.divfooter ul li{
-    font-size: 10px;
-    padding-left: 20px;
-}
-
-.iconos{
-    padding-top: 20px;
-    float:none;
-    justify-content: center;
-    padding-right: 0px;
-}
-
-.copyright2{
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.subir{
-    right: 15px;
-}
-
-}
-
-/* END MEDIA QUERIES MOBILE TIENDA*/
-/* ----------------------------------------------
- * Generated by Animista on 2022-4-25 11:56:13
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
- @-webkit-keyframes shadow-drop-center{0%{-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}@keyframes shadow-drop-center{0%{-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}
