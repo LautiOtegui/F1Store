@@ -357,21 +357,25 @@ a:hover {
     background: url("/img/kimi.jpg") no-repeat center;
     background-size: cover;
     transition: all 0.3s;
+    z-index: 1;
 }
 
 .section-products #product-2 .part-1::before {
     background: url("/img/mercedes.png") no-repeat center;
     background-size: cover;
+    z-index: 1;
 }
 
 .section-products #product-3 .part-1::before {
     background: url(/img/alonso.jpg) no-repeat center;
     background-size: cover;
+    z-index: 1;
 }
 
 .section-products #product-4 .part-1::before {
     background: url("/img/redbullcap.png") no-repeat center;
     background-size: cover;
+    z-index: 1;
 }
 
 .section-products .single-product .part-1 .discount,
@@ -384,11 +388,13 @@ a:hover {
     padding: 2px 8px;
     text-transform: uppercase;
     font-size: 0.85rem;
+    z-index: 1;
 }
 
 .section-products .single-product .part-1 .new {
     left: 0;
     background-color: #444444;
+    z-index: 1;
 }
 
 .section-products .single-product .part-1 ul {
