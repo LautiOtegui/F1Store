@@ -3,14 +3,10 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Jura', sans-serif;
-    ;
-
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 /*INDEX*/
 .showcase {
     position: absolute;
@@ -62,7 +58,7 @@ html {
     left: 1.25rem;
 }
 
-#store1 {
+.store1 {
     position: relative;
     top: 0.5rem;
     left: 1.25rem;
@@ -93,7 +89,7 @@ ul li {
     left: 1rem;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: #F2EBDF;
     text-decoration: none
 }
@@ -111,16 +107,28 @@ a {
     height: 39.375rem;
 }
 
-.ferrari:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
+.ferrari:hover {
+    -webkit-animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both;
+    animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both
+}
 
-.redbullcap:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
+.redbullcap:hover {
+    -webkit-animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both;
+    animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both
+}
 
-.mercedes:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
+.mercedes:hover {
+    -webkit-animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both;
+    animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both
+}
 
-.remera:hover{-webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both}
+.remera:hover {
+    -webkit-animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both;
+    animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both
+}
 
 
-.shopnow{
+.shopnow {
     text-align: center;
 }
 
@@ -270,8 +278,235 @@ footer {
 
 
 /*EMPIEZA TIENDA*/
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
 
+}
 
+.top {
+    height: 400px;
+    background: rgba(0, 0, 0, 0.7) url(/img/mercedescar.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#shopage {
+    background-color: #F2EBDF;
+    opacity: 0.99;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.section-products {
+    padding: 80px 0 54px;
+}
+
+.section-products .header {
+    margin-bottom: 50px;
+}
+
+.section-products .header h3 {
+    font-size: 2.6rem;
+    color: black;
+    font-weight: 500;
+}
+
+.section-products .header h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444444;
+    margin-bottom: 13rem;
+}
+
+.section-products .single-product {
+    margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+    position: relative;
+    height: 290px;
+    max-height: 290px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+    transform: scale(1.2, 1.2) rotate(5deg);
+}
+
+.section-products #product-1 .part-1::before {
+    background: url("/img/kimi.jpg") no-repeat center;
+    background-size: cover;
+    transition: all 0.3s;
+}
+
+.section-products #product-2 .part-1::before {
+    background: url("/img/mercedes.png") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-3 .part-1::before {
+    background: url(/img/alonso.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-4 .part-1::before {
+    background: url("/img/redbullcap.png") no-repeat center;
+    background-size: cover;
+}
+
+.section-products .single-product .part-1 .discount,
+.section-products .single-product .part-1 .new {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #ffffff;
+    background-color: #fe302f;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.section-products .single-product .part-1 .new {
+    left: 0;
+    background-color: #444444;
+}
+
+.section-products .single-product .part-1 ul {
+    position: absolute;
+    bottom: -41px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+    color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 h4 {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-old-price {
+    position: relative;
+    padding: 0 7px;
+    margin-right: 2px;
+    opacity: 0.6;
+}
+
+.section-products .single-product .part-2 .product-old-price::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #444444;
+    transform: translateY(-50%);
+}
+
+.section2tienda {
+    height: 600px;
+}
+
+.metodospago {
+    position: relative;
+    top: 5rem;
+    text-align: center;
+}
+
+.div2tienda {
+    position: relative;
+    top: 6.6rem;
+}
+
+.div2tienda ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.pnosotrostienda {
+    position: relative;
+    top: 5rem;
+    text-align: center;
+}
+
+.logo2 {
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+}
+
+.section3tienda {
+    position: relative;
+    height: 300px;
+}
+
+#footertienda {
+    position: relative;
+    height: 25rem;
+}
+
+.text-center {
+    position: relative;
+    top: 5rem;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
 
 /*TERMINA TIENDA*/
 
@@ -291,110 +526,30 @@ footer {
     background-color: #F2EBDF;
 }
 
-.subir:hover{
+.subir:hover {
     color: black;
 }
-/*BOTON DE SUBIR*/
+/*TERMINA BOTON DE SUBIR*/
 
-
-
-/*MEDIA QUERIES DESKTOP*/
-
-/*@media only screen and (max-width:1100px) {
-
-
-
-/*MEDIA QUERIES TABLET*/
-/*@media only screen and (max-width:768px)
-/* END MEDIA QUERIES TABLET*/
-
-
-
-
-
-
-/*MEDIA QUERIES TIENDA TABLET*/
-
-/*@media only screen and (max-width:768px) {
-
-
-
-
-
-
-
-
-
-
-/*MEDIA QUERIES MOBILE*/
-/*@media only screen and (max-width:600px) 
-
-/* END MEDIA QUERIES MOBILE*/
-
-/* MEDIA QUERIES MOBILE TIENDA*/
-
-@media only screen and (max-width:800px){
-    * {
-        margin: 0%;
-        padding: 0%;
-        box-sizing: border-box;
-        font-family: 'Jura', sans-serif;
-    }
-
-    .ferrari{
-        width: 150px;
-        height: 180px;
-    }
-    .redbullcap{
-        width: 150px;
-        height: 180px;
-    }
-    .mercedes{
-        width: 150px;
-        height: 180px;
-    }
-    .remera{
-        width: 150px;
-        height: 180px;
-    }
-    
-
-}
-@media only screen and (max-width:600px){
-    * {
-        margin: 0%;
-        padding: 0%;
-        box-sizing: border-box;
-        font-family: 'Jura', sans-serif;
-    }
-
-    nav ul{
-        gap: 3rem;
-    }
-
-    .ferrari{
-        width: 100px;
-        height: 130px;
-    }
-    .redbullcap{
-        width: 100px;
-        height: 130px;
-    }
-    .mercedes{
-        width: 100px;
-        height: 130px;
-    }
-    .remera{
-        width: 100px;
-        height: 130px;
-    }
-    
-    .divcontacto{
-        gap: 3rem;
+/*MEDIA QUERIES MOBILE TIENDA*/
+@media only screen and (max-width:500px) {
+    .div2tienda ul {
+        gap: 0.4rem;
     }
 
 }
-@media only screen and (max-width:460px){
+
+@media only screen and (max-width:390px) {
+    .div2tienda ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/*TERMINA MEDIA QUERIES TIENDA */
+/*MEDIA QUERIES INDEX*/
+@media only screen and (max-width:800px) {
     * {
         margin: 0%;
         padding: 0%;
@@ -402,72 +557,128 @@ footer {
         font-family: 'Jura', sans-serif;
     }
 
-    nav ul{
+    .ferrari {
+        width: 150px;
+        height: 180px;
+    }
+
+    .redbullcap {
+        width: 150px;
+        height: 180px;
+    }
+
+    .mercedes {
+        width: 150px;
+        height: 180px;
+    }
+
+    .remera {
+        width: 150px;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: 'Jura', sans-serif;
+    }
+
+    nav ul {
+        gap: 3rem;
+    }
+
+    .ferrari {
+        width: 100px;
+        height: 130px;
+    }
+
+    .redbullcap {
+        width: 100px;
+        height: 130px;
+    }
+
+    .mercedes {
+        width: 100px;
+        height: 130px;
+    }
+
+    .remera {
+        width: 100px;
+        height: 130px;
+    }
+
+    .divcontacto {
+        gap: 3rem;
+    }
+}
+@media only screen and (max-width:460px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: 'Jura', sans-serif;
+    }
+
+    nav ul {
         gap: 1.5rem;
     }
 
 
-    .divcontacto{
+    .divcontacto {
         gap: 2rem;
     }
 
 }
-@media only screen and (max-width:400px){
+
+@media only screen and (max-width:400px) {
     * {
         margin: 0%;
         padding: 0%;
         box-sizing: border-box;
         font-family: 'Jura', sans-serif;
     }
-
-    nav ul{
+    nav ul {
         gap: 0.7rem;
     }
-
-    .ferrari{
+    .ferrari {
         width: 80px;
         height: 100px;
     }
-    .redbullcap{
+    .redbullcap {
         width: 80px;
         height: 100px;
     }
-    .mercedes{
+    .mercedes {
         width: 80px;
         height: 100px;
     }
-    .remera{
+    .remera {
         width: 80px;
         height: 100px;
     }
-
-    .divcontacto{
+    .divcontacto {
         gap: 2rem;
     }
-
 }
-
-
-
-
+/*TERMINA MEDIA QUERIES INDEX*/
 @-webkit-keyframes shadow-drop-center {
     0% {
         -webkit-box-shadow: 0 0 0 0 transparent;
         box-shadow: 0 0 0 0 transparent
     }
-
     100% {
         -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35);
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35)
     }
 }
-
 @keyframes shadow-drop-center {
     0% {
         -webkit-box-shadow: 0 0 0 0 transparent;
         box-shadow: 0 0 0 0 transparent
     }
-
     100% {
         -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35);
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35)
