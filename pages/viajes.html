@@ -1,78 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/estilo.css">
     <link rel="shortcut icon" href="../img/icono.ico">
     <title>F1 Store</title>
 </head>
+
 <body>
-    <header>
-        <div><img class="logo" src="/img/f1logo.png"alt="f1logo"> <span>Store</span>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="/pages/tienda.html">Tienda</a></li>
-                    <li><a href="#">Viajes</a></li>
-                    <li><a href="/pages/info.html">Info</a></li>
-                    <li><a href="/pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-<main>
-    <div>
+    <section class="top2">
+        <header>
+            <div><img class="logo" src="/img/f1logo.png" alt="f1logo"><span class="store2">Store</span>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="/pages/tienda.html">Tienda</a></li>
+                        <li><a href="#">Viajes</a></li>
+                        <li><a href="/pages/info.html">Info</a></li>
+                        <li><a href="/pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <h1 class="h1viajes">Tienda Oficial de la Formula 1</h1>
-    </div>
-
-    <section class="section1viajes">
-        <h2 class="viajes">Viajes</h2>
-        <p class="pviajes">Vivi la experiencia de estar en un Gran Premio de la Formula 1</p>
-        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/52UQ5TLej0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
+    <main class="mainviaje">
+        <section class="section1viajes">
+            <h2 class="viajes">Viajes</h2>
+            <p class="pviajes">Vivi la experiencia de estar en un Gran Premio de la Formula 1</p>
+            <div id="demo" class="carousel slide" data-ride="carousel">
 
-    <section class="section2viajes">
-        <h2>¿Que incluye el viaje?</h2>
-        <p class="phelp">F1 Store te ayuda a financiar tu viaje y a elegir la mejor opcion dependiendo al Gran Premio que el cliente quiera ir.</p>
-        <p class="pincluye"><b>Incluye:</b></p>
-    <div class="diviaje">
-        <ul>
-            <li>Ayuda con Finanzas</li>
-            <li>Comodidad al entrar al pais del Gran Premio</li>
-            <li>Pases VIP</li>
-            <li>Traslado al circuito</li>
-            <li>Alojamiento</li>
-        </ul>
-    </div>
-    </section>
-
-    <footer>
-        <div class="divfooter"><img class="logo2" src="/img/f1logo.png"alt="f1logo"> <span class="span2">Store</span>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="/pages/tienda.html">Tienda</a></li>
-                    <li><a href="#">Viajes</a></li>
-                    <li><a href="/pages/info.html">Info</a></li>
-                    <li><a href="/pages/contacto.html">Contacto</a></li>
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
                 </ul>
-        </div>
-    <div class="iconos">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-whatsapp"></i>
-    </div>
-        <p class="copyright">Copyright F1 Store</p>
-        <p class="developed">Developed By Lautaro Otegui</p>
-    </footer>
-    <a href="#" class="subir"><i class="fa-solid fa-angles-up"></i></a>
-</main>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/cota.jpg" alt="USA" width="100%" height="400">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/silverstone.jpg" alt="silverstone" width="100%" height="5400">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/singapore.jpg" alt="singapore" width="100%" height="5400">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section2viajes">
+            <h2 class="h2viaje">¿Que incluye el viaje?</h2>
+            <p class="phelp">F1 Store te ayuda a financiar tu viaje y a elegir la mejor opcion dependiendo al Gran
+                Premio que el cliente quiera ir.</p>
+        </section>
+
+        <footer class="footer3">
+            <div class="divfooter"><img class="logo3" src="/img/f1logo.png" alt="f1logo"> <span
+                    class="span3">Store</span></div>
+            <div class="footerdiv">
+                <ul>
+                    <li class="footerli"><a href="../index.html">Home</a></li>
+                    <li class="footerli"><a href="/pages/tienda.html">Tienda</a></li>
+                    <li class="footerli"><a href="#">Viajes</a></li>
+                    <li class="footerli"><a href="/pages/info.html">Info</a></li>
+                    <li class="footerli"><a href="/pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="iconos">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <p class="copyright">Copyright F1 Store</p>
+            <p class="developed">Developed By Lautaro Otegui</p>
+        </footer>
+        <a href="#" class="subir"><i class="fa-solid fa-angles-up"></i></a>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+</script>
 </body>
+
 </html>
