@@ -1,0 +1,277 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    background: black;
+    z-index: 2;
+    display: inline-block;
+}
+
+.showcase header {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.45;
+
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1);
+}
+
+.logo {
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    left: 1.25rem;
+}
+
+.store1 {
+    position: relative;
+    top: 0.5rem;
+    left: 1.25rem;
+    color: #F2EBDF;
+}
+
+
+h1 {
+    text-align: center;
+    position: relative;
+    color: #F2EBDF;
+    top: 10rem;
+}
+
+nav {
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
+    gap: 5.1rem;
+}
+
+ul li {
+    list-style: none;
+    position: relative;
+    left: 1rem;
+}
+
+nav ul li a:hover {
+    color: #F2EBDF;
+    text-decoration: none
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    color: #F2EBDF;
+}
+
+.tienda {
+    position: relative;
+    top: 25rem;
+    background-color: #F2EBDF;
+    height: 39.375rem;
+}
+
+.ferrari:hover {
+    -webkit-animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both;
+    animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.redbullcap:hover {
+    -webkit-animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both;
+    animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.mercedes:hover {
+    -webkit-animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both;
+    animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.remera:hover {
+    -webkit-animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both;
+    animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.row{
+    margin-top: 3rem;
+}
+
+.shopnow {
+    text-align: center;
+}
+
+.cta {
+    border: none;
+    background: none;
+    position: relative;
+    top: 10rem;
+    color: #000000;
+
+
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 10px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.div1 {
+    position: relative;
+    top: 8rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    text-align: center;
+    position: relative;
+    font-size: 2.4rem;
+    top: 3rem;
+}
+
+.section2 {
+    position: relative;
+    top: 25rem;
+    background-color: #F2EBDF;
+    height: 39rem;
+}
+
+.pviaje {
+    position: relative;
+    top: 5.5rem;
+    text-align: center;
+
+}
+
+.divideo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 7rem;
+}
+
+.section3 {
+    position: relative;
+    top: 25rem;
+    background-color: #F2EBDF;
+    height: 39rem;
+}
+
+.h2nosotros {
+    position: relative;
+    top: 8rem;
+    color: #F2EBDF;
+}
+
+.pnosotros {
+    color: #F2EBDF;
+    background-image: url(/img/redbullcar.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.section4 {
+    position: relative;
+    top: 25rem;
+    height: 28rem;
+    background-color: #F2EBDF;
+}
+
+.pcontacto {
+    position: relative;
+    top: 4rem;
+    text-align: center;
+}
+
+.divcontacto {
+    display: flex;
+    position: relative;
+    top: 6rem;
+    justify-content: center;
+    gap: 8rem;
+}
+
+footer {
+    position: relative;
+    top: 25rem;
+    background-color: #F2EBDF;
+}

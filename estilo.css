@@ -1,849 +1,303 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Jura', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Jura', sans-serif;
 }
+
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-/*INDEX*/
+
 .showcase {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    height: 400px;
-    align-items: center;
-    background: black;
-    z-index: 2;
-    display: inline-block;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+  z-index: 2;
+  display: inline-block;
 }
 
 .showcase header {
-    position: absolute;
-    z-index: 1000;
-    width: 100%;
-
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
 }
 
 .showcase video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.45;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.45;
 }
 
 .text {
-    position: relative;
-    z-index: 10;
+  position: relative;
+  z-index: 10;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
 }
 
 .logo {
-    width: 6rem;
-    height: 6rem;
-    position: relative;
-    left: 1.25rem;
+  width: 6rem;
+  height: 6rem;
+  position: relative;
+  left: 1.25rem;
 }
 
 .store1 {
-    position: relative;
-    top: 0.5rem;
-    left: 1.25rem;
-    color: #F2EBDF;
+  position: relative;
+  top: 0.5rem;
+  left: 1.25rem;
+  color: #F2EBDF;
 }
 
-
 h1 {
-    text-align: center;
-    position: relative;
-    color: #F2EBDF;
-    top: 10rem;
+  text-align: center;
+  position: relative;
+  color: #F2EBDF;
+  top: 10rem;
 }
 
 nav {
-    justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav ul {
-    display: flex;
-    position: relative;
-    gap: 5.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  gap: 5.1rem;
 }
 
 ul li {
-    list-style: none;
-    position: relative;
-    left: 1rem;
+  list-style: none;
+  position: relative;
+  left: 1rem;
 }
 
 nav ul li a:hover {
-    color: #F2EBDF;
-    text-decoration: none
+  color: #F2EBDF;
+  text-decoration: none;
 }
 
 a {
-    text-decoration: none;
-    position: relative;
-    color: #F2EBDF;
+  text-decoration: none;
+  position: relative;
+  color: #F2EBDF;
 }
 
 .tienda {
-    position: relative;
-    top: 25rem;
-    background-color: #F2EBDF;
-    height: 39.375rem;
+  position: relative;
+  top: 25rem;
+  background-color: #F2EBDF;
+  height: 39.375rem;
 }
 
 .ferrari:hover {
-    -webkit-animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both;
-    animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both
+  -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .redbullcap:hover {
-    -webkit-animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both;
-    animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both
+  -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .mercedes:hover {
-    -webkit-animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both;
-    animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both
+  -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .remera:hover {
-    -webkit-animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both;
-    animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both
+  -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.row {
+  margin-top: 3rem;
+}
 
 .shopnow {
-    text-align: center;
+  text-align: center;
 }
 
 .cta {
-    border: none;
-    background: none;
-    position: relative;
-    top: 10rem;
-    color: #000000;
-
-
+  border: none;
+  background: none;
+  position: relative;
+  top: 10rem;
+  color: #000000;
 }
 
 .cta span {
-    padding-bottom: 7px;
-    letter-spacing: 4px;
-    font-size: 10px;
-    padding-right: 15px;
-    text-transform: uppercase;
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 10px;
+  padding-right: 15px;
+  text-transform: uppercase;
 }
 
 .cta svg {
-    transform: translateX(-8px);
-    transition: all 0.3s ease;
+  -webkit-transform: translateX(-8px);
+          transform: translateX(-8px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .cta:hover svg {
-    transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .cta:active svg {
-    transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .hover-underline-animation {
-    position: relative;
-    color: black;
-    padding-bottom: 20px;
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
 }
 
 .hover-underline-animation:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1.5px;
-    bottom: 0;
-    left: 0;
-    background-color: #000000;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 
 .cta:hover .hover-underline-animation:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
 .div1 {
-    position: relative;
-    top: 8rem;
-    display: flex;
-    justify-content: space-around;
+  position: relative;
+  top: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 h2 {
-    text-align: center;
-    position: relative;
-    font-size: 2.4rem;
-    top: 3rem;
+  text-align: center;
+  position: relative;
+  font-size: 2.4rem;
+  top: 3rem;
 }
 
 .section2 {
-    position: relative;
-    top: 25rem;
-    background-color: #F2EBDF;
-    height: 39rem;
+  position: relative;
+  top: 25rem;
+  background-color: #F2EBDF;
+  height: 39rem;
 }
 
 .pviaje {
-    position: relative;
-    top: 5.5rem;
-    text-align: center;
-
+  position: relative;
+  top: 5.5rem;
+  text-align: center;
 }
 
 .divideo {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 7rem;
 }
 
 .section3 {
-    position: relative;
-    top: 25rem;
-    background-color: #F2EBDF;
-    height: 39rem;
+  position: relative;
+  top: 25rem;
+  background-color: #F2EBDF;
+  height: 39rem;
 }
 
 .h2nosotros {
-    position: relative;
-    top: 8rem;
-    color: #F2EBDF;
+  position: relative;
+  top: 8rem;
+  color: #F2EBDF;
 }
 
 .pnosotros {
-    color: #F2EBDF;
-    background-image: url(/img/redbullcar.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 400px;
-    text-align: center;
-    padding-top: 200px;
+  color: #F2EBDF;
+  background-image: url(/img/redbullcar.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  padding-top: 200px;
 }
 
 .section4 {
-    position: relative;
-    top: 25rem;
-    height: 28rem;
-    background-color: #F2EBDF;
+  position: relative;
+  top: 25rem;
+  height: 28rem;
+  background-color: #F2EBDF;
 }
 
 .pcontacto {
-    position: relative;
-    top: 4rem;
-    text-align: center;
+  position: relative;
+  top: 4rem;
+  text-align: center;
 }
 
 .divcontacto {
-    display: flex;
-    position: relative;
-    top: 6rem;
-    justify-content: center;
-    gap: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8rem;
 }
 
 footer {
-    position: relative;
-    top: 25rem;
-    background-color: #F2EBDF;
-}
-
-/*TERMINA INDEX*/
-
-
-
-/*EMPIEZA TIENDA*/
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Jura', sans-serif;
-}
-
-.top {
-    height: 400px;
-    background: rgba(0, 0, 0, 0.7) url(/img/mercedescar.jpg);
-    background-blend-mode: darken;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#shopage {
-    background-color: #F2EBDF;
-    opacity: 0.99;
-}
-
-a,
-a:hover {
-    text-decoration: none;
-}
-
-.section-products {
-    padding: 80px 0 54px;
-}
-
-.section-products .header {
-    margin-bottom: 50px;
-}
-
-.section-products .header h3 {
-    font-size: 2.6rem;
-    color: black;
-    font-weight: 500;
-}
-
-.section-products .header h2 {
-    font-size: 2.2rem;
-    font-weight: 400;
-    color: #444444;
-    margin-bottom: 13rem;
-}
-
-.section-products .single-product {
-    margin-bottom: 26px;
-}
-
-.section-products .single-product .part-1 {
-    position: relative;
-    height: 290px;
-    max-height: 290px;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.section-products .single-product .part-1::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: all 0.3s;
-}
-
-.section-products .single-product:hover .part-1::before {
-    transform: scale(1.2, 1.2) rotate(5deg);
-}
-
-.section-products #product-1 .part-1::before {
-    background: url("/img/kimi.jpg") no-repeat center;
-    background-size: cover;
-    transition: all 0.3s;
-    z-index: 1;
-}
-
-.section-products #product-2 .part-1::before {
-    background: url("/img/mercedes.png") no-repeat center;
-    background-size: cover;
-    z-index: 1;
-}
-
-.section-products #product-3 .part-1::before {
-    background: url(/img/alonso.jpg) no-repeat center;
-    background-size: cover;
-    z-index: 1;
-}
-
-.section-products #product-4 .part-1::before {
-    background: url("/img/redbullcap.png") no-repeat center;
-    background-size: cover;
-    z-index: 1;
-}
-
-.section-products .single-product .part-1 .discount,
-.section-products .single-product .part-1 .new {
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    color: #ffffff;
-    background-color: #fe302f;
-    padding: 2px 8px;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    z-index: 1;
-}
-
-.section-products .single-product .part-1 .new {
-    left: 0;
-    background-color: #444444;
-    z-index: 1;
-}
-
-.section-products .single-product .part-1 ul {
-    position: absolute;
-    bottom: -41px;
-    left: 20px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    opacity: 0;
-    transition: bottom 0.5s, opacity 0.5s;
-}
-
-.section-products .single-product:hover .part-1 ul {
-    bottom: 30px;
-    opacity: 1;
-}
-
-.section-products .single-product .part-1 ul li {
-    display: inline-block;
-    margin-right: 4px;
-}
-
-.section-products .single-product .part-1 ul li a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    background-color: #ffffff;
-    color: #444444;
-    text-align: center;
-    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
-    transition: color 0.2s;
-}
-
-.section-products .single-product .part-1 ul li a:hover {
-    color: #fe302f;
-}
-
-.section-products .single-product .part-2 .product-title {
-    font-size: 1rem;
-}
-
-.section-products .single-product .part-2 h4 {
-    display: inline-block;
-    font-size: 1rem;
-}
-
-.section-products .single-product .part-2 .product-old-price {
-    position: relative;
-    padding: 0 7px;
-    margin-right: 2px;
-    opacity: 0.6;
-}
-
-.section-products .single-product .part-2 .product-old-price::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #444444;
-    transform: translateY(-50%);
-}
-
-.section2tienda {
-    height: 600px;
-}
-
-.metodospago {
-    position: relative;
-    top: 5rem;
-    text-align: center;
-}
-
-.div2tienda {
-    position: relative;
-    top: 6.6rem;
-}
-
-.div2tienda ul {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.pnosotrostienda {
-    position: relative;
-    top: 5rem;
-    text-align: center;
-}
-
-.logo2 {
-    width: 6rem;
-    height: 6rem;
-    position: relative;
-}
-
-.section3tienda {
-    position: relative;
-    height: 0px;
-}
-
-#footertienda {
-    position: relative;
-    height: 25rem;
-}
-
-
-
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
-}
-
-/*TERMINA TIENDA*/
-
-
-/*EMPIEZA VIAJES*/
-
-.top2{
-    height: 400px;
-    background: rgba(0, 0, 0, 0.7) url(/img/ferraricar.jpg);
-    background-blend-mode: darken;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.store2{
-    position: relative;
-    top: 0.2rem;
-    left: 1.25rem;
-    color: #F2EBDF;
-}
-
-nav ul{
-    justify-content: center;
-}
-
-.mainviaje{
-    background-color: #F2EBDF;
-}
-
-.section1viajes{
-    height: 40rem;
-}
-
-.pviajes{
-    position: relative;
-    top: 6rem;
-    text-align: center;
-}
-
-.carousel-inner img {
-    width: 100%;
-    height: 48rem;
-    }
-
-.carousel{
-    position: relative;
-    top: 8rem;
-}
-
-
-.section2viajes{
-    height: 40rem;
-}
-
-.h2viaje{
-    position: relative;
-    top: 28rem;
-}
-
-.phelp{
-    top: 30rem;
-    position: relative;
-    text-align: center;
-}
-
-.pincluye{
-    position: relative;
-    top: 33rem;
-    text-align: center;
-}
-
-.diviaje{
-    position: relative;
-    top: 38rem;
-}
-
-.diviaje ul{
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-}
-
-.footer3{
-    top: 14rem;
-    height: 25rem;
-}
-
-.divfooter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo3{
-        width: 6rem;
-        height: 6rem;
-}
-
-.footerli{
-    display: inline-flex;
-    position: relative;
-}
-
-.footerdiv ul{
-    gap: 1rem;
-}
-
-.footerli a{
-    color:black;
-}
-.divfooter ul{
-    gap: 2rem;
-}
-
-.footerdiv{
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.iconos{
-    font-size: 1.4rem;
-    text-align: center;
-}
-ul li{
-    left: 0;
-}
-
-.copyright{
-    text-align: center;
-    position: relative;
-    top: 4rem;
-}
-
-.developed{
-    text-align: center;
-    position: relative;
-    top: 3rem;
-}
-
-/*TERMINA VIAJES*/
-
-
-
-
-
-/*BOTON DE SUBIR*/
-.subir {
-    height: 40px;
-    width: 40px;
-    color: black;
-    border: 1px solid black;
-    position: fixed;
-    bottom: 60px;
-    right: 150px;
-    text-align: center;
-    line-height: 36px;
-    border-radius: 50px;
-    box-shadow: 0 0 10px #333;
-    background-color: #F2EBDF;
-}
-
-.subir:hover {
-    color: black;
-}
-/*TERMINA BOTON DE SUBIR*/
-
-/*MEDIA QUERIES MOBILE VIAJE*/
-@media only screen and (max-width:860px)
-{
-    .carousel-inner img {
-        width: 100%;
-        height: 28rem;
-        }
-}
-@media only screen and (max-width:390px)
-{
-    .carousel-inner img {
-        width: 100%;
-        height: 18rem;
-        }
-}
-/*TERMINA MEDIA QUERIES MOBILE VIAJE*/
-
-/*MEDIA QUERIES MOBILE TIENDA*/
-@media only screen and (max-width:500px) {
-    .div2tienda ul {
-        gap: 0.4rem;
-    }
-
-}
-@media only screen and (max-width:390px) {
-    .div2tienda ul {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/*TERMINA MEDIA QUERIES TIENDA */
-
-
-/*MEDIA QUERIES INDEX*/
-@media only screen and (max-width:800px) {
-    * {
-        margin: 0%;
-        padding: 0%;
-        box-sizing: border-box;
-        font-family: 'Jura', sans-serif;
-    }
-
-    .ferrari {
-        width: 150px;
-        height: 180px;
-    }
-
-    .redbullcap {
-        width: 150px;
-        height: 180px;
-    }
-
-    .mercedes {
-        width: 150px;
-        height: 180px;
-    }
-
-    .remera {
-        width: 150px;
-        height: 180px;
-    }
-}
-
-@media only screen and (max-width:600px) {
-    * {
-        margin: 0%;
-        padding: 0%;
-        box-sizing: border-box;
-        font-family: 'Jura', sans-serif;
-    }
-
-    nav ul {
-        gap: 3rem;
-    }
-
-    .ferrari {
-        width: 100px;
-        height: 130px;
-    }
-
-    .redbullcap {
-        width: 100px;
-        height: 130px;
-    }
-
-    .mercedes {
-        width: 100px;
-        height: 130px;
-    }
-
-    .remera {
-        width: 100px;
-        height: 130px;
-    }
-
-    .divcontacto {
-        gap: 3rem;
-    }
-}
-@media only screen and (max-width:460px) {
-    * {
-        margin: 0%;
-        padding: 0%;
-        box-sizing: border-box;
-        font-family: 'Jura', sans-serif;
-    }
-
-    nav ul {
-        gap: 1.5rem;
-    }
-
-
-    .divcontacto {
-        gap: 2rem;
-    }
-
-}
-
-@media only screen and (max-width:400px) {
-    * {
-        margin: 0%;
-        padding: 0%;
-        box-sizing: border-box;
-        font-family: 'Jura', sans-serif;
-    }
-    nav ul {
-        gap: 0.7rem;
-    }
-    .ferrari {
-        width: 80px;
-        height: 100px;
-    }
-    .redbullcap {
-        width: 80px;
-        height: 100px;
-    }
-    .mercedes {
-        width: 80px;
-        height: 100px;
-    }
-    .remera {
-        width: 80px;
-        height: 100px;
-    }
-    .divcontacto {
-        gap: 2rem;
-    }
-}
-
-/*TERMINA MEDIA QUERIES INDEX*/
-@-webkit-keyframes shadow-drop-center {
-    0% {
-        -webkit-box-shadow: 0 0 0 0 transparent;
-        box-shadow: 0 0 0 0 transparent
-    }
-    100% {
-        -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35);
-        box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35)
-    }
-}
-@keyframes shadow-drop-center {
-    0% {
-        -webkit-box-shadow: 0 0 0 0 transparent;
-        box-shadow: 0 0 0 0 transparent
-    }
-    100% {
-        -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35);
-        box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35)
-    }
-}
+  position: relative;
+  top: 25rem;
+  background-color: #F2EBDF;
+}
+/*# sourceMappingURL=estilo.css.map */
