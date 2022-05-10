@@ -1,3 +1,8 @@
+$scolor1:#F2EBDF;
+$ssize: 100%;
+$scenter: center;
+$sabpos: absolute;
+
 * {
     margin: 0%;
     padding: 0%;
@@ -9,29 +14,29 @@ html {
 }
 
 .showcase {
-    position: absolute;
+    position: $sabpos;
     right: 0;
-    width: 100%;
+    width: $ssize;
     height: 400px;
-    align-items: center;
+    align-items: $scenter;
     background: black;
     z-index: 2;
     display: inline-block;
 }
 
 .showcase header {
-    position: absolute;
+    position: $sabpos;
     z-index: 1000;
-    width: 100%;
+    width: $ssize;
 
 }
 
 .showcase video {
-    position: absolute;
+    position: $sabpos;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: $ssize;
     object-fit: cover;
     opacity: 0.45;
 
@@ -43,11 +48,11 @@ html {
 }
 
 .overlay {
-    position: absolute;
+    position: $sabpos;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: $ssize;
+    height: $ssize;
     background: rgba(0, 0, 0, 1);
 }
 
@@ -62,19 +67,19 @@ html {
     position: relative;
     top: 0.5rem;
     left: 1.25rem;
-    color: #F2EBDF;
+    color: $scolor1;
 }
 
 
 h1 {
-    text-align: center;
+    text-align: $scenter;
     position: relative;
-    color: #F2EBDF;
+    color: $scolor1;
     top: 10rem;
 }
 
 nav {
-    justify-content: center;
+    justify-content: $scenter;
 }
 
 nav ul {
@@ -90,20 +95,20 @@ ul li {
 }
 
 nav ul li a:hover {
-    color: #F2EBDF;
+    color: $scolor1;
     text-decoration: none
 }
 
 a {
     text-decoration: none;
     position: relative;
-    color: #F2EBDF;
+    color: $scolor1;
 }
 
 .tienda {
     position: relative;
     top: 25rem;
-    background-color: #F2EBDF;
+    background-color: $scolor1;
     height: 39.375rem;
 }
 
@@ -132,7 +137,7 @@ a {
 }
 
 .shopnow {
-    text-align: center;
+    text-align: $scenter;
 }
 
 .cta {
@@ -174,8 +179,8 @@ a {
 
 .hover-underline-animation:after {
     content: "";
-    position: absolute;
-    width: 100%;
+    position: $sabpos;
+    width: $ssize;
     transform: scaleX(0);
     height: 1.5px;
     bottom: 0;
@@ -198,7 +203,7 @@ a {
 }
 
 h2 {
-    text-align: center;
+    text-align: $scenter;
     position: relative;
     font-size: 2.4rem;
     top: 3rem;
@@ -207,20 +212,20 @@ h2 {
 .section2 {
     position: relative;
     top: 25rem;
-    background-color: #F2EBDF;
+    background-color: $scolor1;
     height: 39rem;
 }
 
 .pviaje {
     position: relative;
     top: 5.5rem;
-    text-align: center;
+    text-align: $scenter;
 
 }
 
 .divideo {
     display: flex;
-    justify-content: center;
+    justify-content: $scenter;
     position: relative;
     top: 7rem;
 }
@@ -228,24 +233,24 @@ h2 {
 .section3 {
     position: relative;
     top: 25rem;
-    background-color: #F2EBDF;
+    background-color: $scolor1;
     height: 39rem;
 }
 
 .h2nosotros {
     position: relative;
     top: 8rem;
-    color: #F2EBDF;
+    color: $scolor1;
 }
 
 .pnosotros {
-    color: #F2EBDF;
+    color: $scolor1;
     background-image: url(/img/redbullcar.jpg);
     background-size: cover;
     background-attachment: fixed;
-    width: 100%;
+    width: $ssize;
     height: 400px;
-    text-align: center;
+    text-align: $scenter;
     padding-top: 200px;
 }
 
@@ -253,25 +258,25 @@ h2 {
     position: relative;
     top: 25rem;
     height: 28rem;
-    background-color: #F2EBDF;
+    background-color: $scolor1;
 }
 
 .pcontacto {
     position: relative;
     top: 4rem;
-    text-align: center;
+    text-align: $scenter;
 }
 
 .divcontacto {
     display: flex;
     position: relative;
     top: 6rem;
-    justify-content: center;
+    justify-content: $scenter;
     gap: 8rem;
 }
 
 footer {
     position: relative;
     top: 25rem;
-    background-color: #F2EBDF;
+    background-color: $scolor1;
 }
