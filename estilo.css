@@ -311,6 +311,13 @@ footer {
 
 /*TERMINA INDEX*/
 /*EMPIEZA TIENDA*/
+.backpos, .top2 {
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .top {
   height: 400px;
   background: rgba(0, 0, 0, 0.7) url(/img/mercedescar.jpg);
@@ -552,10 +559,6 @@ a:hover {
 .top2 {
   height: 400px;
   background: rgba(0, 0, 0, 0.7) url(/img/ferraricar.jpg);
-  background-blend-mode: darken;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .store2 {
