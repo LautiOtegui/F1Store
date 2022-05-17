@@ -36,7 +36,7 @@ html {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   opacity: 0.45;
 }
 
@@ -146,7 +146,7 @@ a {
   background: none;
   position: relative;
   top: 10rem;
-  color: #000000;
+  color: black;
 }
 
 .cta span {
@@ -256,11 +256,11 @@ h2 {
 .h2nosotros {
   position: relative;
   top: 8rem;
-  color: #F2EBDF;
+  color: white;
 }
 
 .pnosotros {
-  color: #F2EBDF;
+  color: white;
   background-image: url(/img/redbullcar.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -299,5 +299,596 @@ footer {
   position: relative;
   top: 25rem;
   background-color: #F2EBDF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*TERMINA INDEX*/
+/*EMPIEZA TIENDA*/
+.top {
+  height: 400px;
+  background: rgba(0, 0, 0, 0.7) url(/img/mercedescar.jpg);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#shopage {
+  background-color: #F2EBDF;
+  opacity: 0.99;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.section-products {
+  padding: 80px 0 54px;
+}
+
+.section-products .header {
+  margin-bottom: 50px;
+}
+
+.section-products .header h3 {
+  font-size: 2.6rem;
+  color: black;
+  font-weight: 500;
+}
+
+.section-products .header h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #444444;
+  margin-bottom: 13rem;
+}
+
+.section-products .single-product {
+  margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+  position: relative;
+  height: 290px;
+  max-height: 290px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+  -webkit-transform: scale(1.2, 1.2) rotate(5deg);
+          transform: scale(1.2, 1.2) rotate(5deg);
+}
+
+.section-products #product-1 .part-1::before {
+  background: url("/img/kimi.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.section-products #product-2 .part-1::before {
+  background: url("/img/mercedes.png") no-repeat center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.section-products #product-3 .part-1::before {
+  background: url(/img/alonso.jpg) no-repeat center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.section-products #product-4 .part-1::before {
+  background: url("/img/redbullcap.png") no-repeat center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.section-products .single-product .part-1 .discount,
+.section-products .single-product .part-1 .new {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #ffffff;
+  background-color: #fe302f;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  z-index: 1;
+}
+
+.section-products .single-product .part-1 .new {
+  left: 0;
+  background-color: #444444;
+  z-index: 1;
+}
+
+.section-products .single-product .part-1 ul {
+  position: absolute;
+  bottom: -41px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  -webkit-transition: bottom 0.5s, opacity 0.5s;
+  transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  color: #444444;
+  text-align: center;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+  color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+  font-size: 1rem;
+}
+
+.section-products .single-product .part-2 h4 {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-old-price {
+  position: relative;
+  padding: 0 7px;
+  margin-right: 2px;
+  opacity: 0.6;
+}
+
+.section-products .single-product .part-2 .product-old-price::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #444444;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.section2tienda {
+  height: 600px;
+}
+
+.metodospago {
+  position: relative;
+  top: 5rem;
+  text-align: center;
+}
+
+.div2tienda {
+  position: relative;
+  top: 6.6rem;
+}
+
+.div2tienda ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+.pnosotrostienda {
+  position: relative;
+  top: 12rem;
+  text-align: center;
+}
+
+.logo2 {
+  width: 6rem;
+  height: 6rem;
+  position: relative;
+}
+
+.h2envios {
+  color: #F2EBDF;
+}
+
+.section3tienda {
+  position: relative;
+  height: 0px;
+}
+
+#footertienda {
+  position: relative;
+  height: 25rem;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+/*TERMINA TIENDA*/
+/*EMPIEZA VIAJES*/
+.top2 {
+  height: 400px;
+  background: rgba(0, 0, 0, 0.7) url(/img/ferraricar.jpg);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.store2 {
+  position: relative;
+  top: 0.2rem;
+  left: 1.25rem;
+  color: #F2EBDF;
+}
+
+nav ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainviaje {
+  background-color: #F2EBDF;
+}
+
+.section1viajes {
+  height: 40rem;
+}
+
+.pviajes {
+  position: relative;
+  top: 6rem;
+  text-align: center;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 48rem;
+}
+
+.carousel {
+  position: relative;
+  top: 8rem;
+}
+
+.section2viajes {
+  height: 40rem;
+}
+
+.h2viaje {
+  position: relative;
+  top: 28rem;
+}
+
+.phelp {
+  top: 30rem;
+  position: relative;
+  text-align: center;
+}
+
+.pincluye {
+  position: relative;
+  top: 33rem;
+  text-align: center;
+}
+
+.diviaje {
+  position: relative;
+  top: 38rem;
+}
+
+.diviaje ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5rem;
+}
+
+.footer3 {
+  top: 14rem;
+  height: 25rem;
+}
+
+.divfooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo3 {
+  width: 6rem;
+  height: 6rem;
+}
+
+.footerli {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+.footerdiv ul {
+  gap: 1rem;
+}
+
+.footerli a {
+  color: black;
+}
+
+.divfooter ul {
+  gap: 2rem;
+}
+
+.footerdiv {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.iconos {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+ul li {
+  left: 0;
+}
+
+.copyright {
+  text-align: center;
+  position: relative;
+  top: 4rem;
+}
+
+.developed {
+  text-align: center;
+  position: relative;
+  top: 3rem;
+}
+
+/*TERMINA VIAJES*/
+/*BOTON DE SUBIR*/
+.subir {
+  height: 40px;
+  width: 40px;
+  color: black;
+  border: 1px solid black;
+  position: fixed;
+  bottom: 60px;
+  right: 150px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 10px #333;
+          box-shadow: 0 0 10px #333;
+  background-color: #F2EBDF;
+}
+
+.subir:hover {
+  color: black;
+}
+
+/*TERMINA BOTON DE SUBIR*/
+/*MEDIA QUERIES MOBILE VIAJE*/
+@media only screen and (max-width: 860px) {
+  .carousel-inner img {
+    width: 100%;
+    height: 28rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .carousel-inner img {
+    width: 100%;
+    height: 18rem;
+  }
+}
+
+/*TERMINA MEDIA QUERIES MOBILE VIAJE*/
+/*MEDIA QUERIES MOBILE TIENDA*/
+@media only screen and (max-width: 500px) {
+  .div2tienda ul {
+    gap: 0.4rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .div2tienda ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*TERMINA MEDIA QUERIES TIENDA */
+/*MEDIA QUERIES INDEX*/
+@media only screen and (max-width: 800px) {
+  * {
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
+  }
+  .ferrari {
+    width: 150px;
+    height: 180px;
+  }
+  .redbullcap {
+    width: 150px;
+    height: 180px;
+  }
+  .mercedes {
+    width: 150px;
+    height: 180px;
+  }
+  .remera {
+    width: 150px;
+    height: 180px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
+  }
+  nav ul {
+    gap: 3rem;
+  }
+  .ferrari {
+    width: 100px;
+    height: 130px;
+  }
+  .redbullcap {
+    width: 100px;
+    height: 130px;
+  }
+  .mercedes {
+    width: 100px;
+    height: 130px;
+  }
+  .remera {
+    width: 100px;
+    height: 130px;
+  }
+  .divcontacto {
+    gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  * {
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
+  }
+  nav ul {
+    gap: 1.5rem;
+  }
+  .divcontacto {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  * {
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
+  }
+  nav ul {
+    gap: 0.7rem;
+  }
+  .ferrari {
+    width: 80px;
+    height: 100px;
+  }
+  .redbullcap {
+    width: 80px;
+    height: 100px;
+  }
+  .mercedes {
+    width: 80px;
+    height: 100px;
+  }
+  .remera {
+    width: 80px;
+    height: 100px;
+  }
+  .divcontacto {
+    gap: 2rem;
+  }
+}
+
+/*TERMINA MEDIA QUERIES INDEX*/
+@-webkit-keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+  }
+}
+
+@keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+  }
 }
 /*# sourceMappingURL=estilo.css.map */
