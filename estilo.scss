@@ -3,14 +3,13 @@ $ssize: 100%;
 $scenter: center;
 $sabpos: absolute;
 
-@mixin Center-Family{
+@mixin Center-Family {
     align-items: center;
     align-content: center;
     justify-content: center;
 }
 
-$typecolors:(
-    color-cremme: #F2EBDF,
+$typecolors:(color-cremme: #F2EBDF,
     color-clear: white,
     color-dark: black,
 );
@@ -21,6 +20,7 @@ $typecolors:(
     box-sizing: border-box;
     font-family: 'Jura', sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -90,7 +90,8 @@ h1 {
     top: 10rem;
 }
 
-;@import "nav-bar";
+;
+@import "nav-bar";
 
 a {
     text-decoration: none;
@@ -125,7 +126,7 @@ a {
     animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both
 }
 
-.row{
+.row {
     margin-top: 3rem;
 }
 
@@ -140,7 +141,7 @@ a {
     top: 10rem;
     color: map-get($map: $typecolors, $key: color-dark);
 
- 
+
 }
 
 .cta span {
@@ -209,6 +210,11 @@ h2 {
     height: 39rem;
 }
 
+.h2viaje {
+    position: relative;
+    top: 3rem;
+}
+
 .pviaje {
     position: relative;
     top: 5.5rem;
@@ -274,13 +280,14 @@ footer {
     background-color: $scolor1;
     @include Center-Family;
 }
+
 /*TERMINA INDEX*/
 
 
 
 /*EMPIEZA TIENDA*/
 
-.backpos{
+.backpos {
     background-blend-mode: darken;
     background-position: center;
     background-size: cover;
@@ -494,7 +501,7 @@ a:hover {
     position: relative;
 }
 
-.h2envios{
+.h2envios {
     color: $scolor1;
 }
 
@@ -520,31 +527,32 @@ a:hover {
 
 /*EMPIEZA VIAJES*/
 
-.top2{
+.top2 {
     height: 400px;
     background: rgba(0, 0, 0, 0.7) url(/img/ferraricar.jpg);
     @extend .backpos;
 }
-.store2{
+
+.store2 {
     position: relative;
     top: 0.2rem;
     left: 1.25rem;
     color: #F2EBDF;
 }
 
-nav ul{
+nav ul {
     justify-content: center;
 }
 
-.mainviaje{
+.mainviaje {
     background-color: #F2EBDF;
 }
 
-.section1viajes{
+.section1viajes {
     height: 40rem;
 }
 
-.pviajes{
+.pviajes {
     position: relative;
     top: 6rem;
     text-align: center;
@@ -553,99 +561,281 @@ nav ul{
 .carousel-inner img {
     width: 100%;
     height: 48rem;
-    }
+}
 
-.carousel{
+.carousel {
     position: relative;
     top: 8rem;
 }
 
 
-.section2viajes{
+.section2viajes {
     height: 40rem;
 }
 
-.h2viaje{
+.h2viaje {
     position: relative;
     top: 28rem;
 }
 
-.phelp{
+.phelp {
     top: 30rem;
     position: relative;
     text-align: center;
 }
 
-.pincluye{
+.pincluye {
     position: relative;
     top: 33rem;
     text-align: center;
 }
 
-.diviaje{
+.diviaje {
     position: relative;
     top: 38rem;
 }
 
-.diviaje ul{
+.diviaje ul {
     display: flex;
     justify-content: center;
     gap: 5rem;
 }
 
-.footer3{
-    top: 14rem;
-    height: 25rem;
+
+/*CONTACTO PAGE*/
+.top3 {
+    height: 400px;
+    background: rgba(0, 0, 0, 0.7) url(/img/mercar.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.divfooter{
+.h2call{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.divinfocontacto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 3rem;
+    gap: 1rem;
+}
+
+.ubicacion{
+        display: flex;
+        justify-content: $scenter;
+        position: relative;
+        top: 5.5rem;
+        left: 41rem;
+}
+
+.h2contacto{
+    position: relative;
+    top: 7rem;
+}
+
+.footercontact{
+    background-color: white;
+}
+
+.divfooter2{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo3{
-        width: 6rem;
-        height: 6rem;
+#copycontact{
+    top: 10rem;
 }
 
-.footerli{
+.form-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.form-holder .form-content {
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.form-content .form-items {
+    border: 3px solid black;
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+    min-width: 540px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.form-content h3 {
+    color: black;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-content h3.form-title {
+    margin-bottom: 30px;
+}
+
+.form-content p {
+    color: black;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+
+.form-content label,
+.was-validated .form-check-input:invalid~.form-check-label,
+.was-validated .form-check-input:valid~.form-check-label {
+    color: black;
+    margin-right: 1rem;
+}
+
+.form-content input[type=text],
+.form-content input[type=password],
+.form-content input[type=email],
+.form-content select {
+    width: 100%;
+    padding: 9px 20px;
+    text-align: left;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: rgb(255, 100, 100);
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+#submit{
+    margin-top: 1rem;
+}
+.form-content textarea {
+    position: static !important;
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 6px;
+    text-align: left;
+    background-color: #8D8D8D;
+    border: 0;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    outline: none;
+    resize: none;
+    height: 120px;
+    -webkit-transition: none;
+    transition: none;
+    margin-bottom: 14px;
+}
+
+.form-content textarea:hover,
+.form-content textarea:focus {
+    border: 0;
+    background-color: #ebeff8;
+    color: #8D8D8D;
+}
+
+.mv-up {
+    margin-top: -9px !important;
+    margin-bottom: 8px !important;
+}
+
+#genero{
+    padding-top: 1.2rem;
+}
+
+#notificacion{
+    padding-top: 1rem;
+}
+
+.footer3 {
+    top: 14rem;
+    height: 25rem;
+}
+
+.divfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo3 {
+    width: 6rem;
+    height: 6rem;
+}
+
+.footerli {
     display: inline-flex;
     position: relative;
 }
 
-.footerdiv ul{
+.footerdiv ul {
     gap: 1rem;
 }
 
-.footerli a{
-    color:black;
+.footerli a {
+    color: black;
 }
-.divfooter ul{
+
+.divfooter ul {
     gap: 2rem;
 }
 
-.footerdiv{
+.footerdiv {
     position: relative;
     display: flex;
     justify-content: center;
 }
 
-.iconos{
+.iconos {
     font-size: 1.4rem;
     text-align: center;
 }
-ul li{
+
+ul li {
     left: 0;
 }
 
-.copyright{
+.copyright {
     text-align: center;
     position: relative;
     top: 4rem;
 }
 
-.developed{
+.developed {
     text-align: center;
     position: relative;
     top: 3rem;
@@ -676,23 +866,24 @@ ul li{
 .subir:hover {
     color: black;
 }
+
 /*TERMINA BOTON DE SUBIR*/
 
 /*MEDIA QUERIES MOBILE VIAJE*/
-@media only screen and (max-width:860px)
-{
+@media only screen and (max-width:860px) {
     .carousel-inner img {
         width: 100%;
         height: 28rem;
-        }
+    }
 }
-@media only screen and (max-width:390px)
-{
+
+@media only screen and (max-width:390px) {
     .carousel-inner img {
         width: 100%;
         height: 18rem;
-        }
+    }
 }
+
 /*TERMINA MEDIA QUERIES MOBILE VIAJE*/
 
 /*MEDIA QUERIES MOBILE TIENDA*/
@@ -702,6 +893,7 @@ ul li{
     }
 
 }
+
 @media only screen and (max-width:390px) {
     .div2tienda ul {
         flex-direction: column;
@@ -778,6 +970,7 @@ ul li{
         gap: 3rem;
     }
 }
+
 @media only screen and (max-width:460px) {
     * {
         margin: 0%;
@@ -804,25 +997,31 @@ ul li{
         box-sizing: border-box;
         font-family: 'Jura', sans-serif;
     }
+
     nav ul {
         gap: 0.7rem;
     }
+
     .ferrari {
         width: 80px;
         height: 100px;
     }
+
     .redbullcap {
         width: 80px;
         height: 100px;
     }
+
     .mercedes {
         width: 80px;
         height: 100px;
     }
+
     .remera {
         width: 80px;
         height: 100px;
     }
+
     .divcontacto {
         gap: 2rem;
     }
@@ -834,16 +1033,19 @@ ul li{
         -webkit-box-shadow: 0 0 0 0 transparent;
         box-shadow: 0 0 0 0 transparent
     }
+
     100% {
         -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35);
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35)
     }
 }
+
 @keyframes shadow-drop-center {
     0% {
         -webkit-box-shadow: 0 0 0 0 transparent;
         box-shadow: 0 0 0 0 transparent
     }
+
     100% {
         -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35);
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35)
