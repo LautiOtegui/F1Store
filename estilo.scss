@@ -216,7 +216,6 @@ h2 {
 }
 .pcontacto {
     position: relative;
-    top: 4rem;
     text-align: $scenter;
 }
 .divcontacto {
@@ -501,6 +500,10 @@ nav ul {
     background-size: cover;
     background-attachment: fixed;
 }
+.contactsec{
+    background-color: #F2EBDF;
+    height: 25rem;
+}
 .h2call{
     text-align: center;
     margin-bottom: 2rem;
@@ -513,19 +516,17 @@ nav ul {
     top: 3rem;
     gap: 1rem;
 }
-.ubicacion{
-        display: flex;
-        justify-content: $scenter;
-        position: relative;
-        top: 5.5rem;
-        left: 41rem;
+.bodycontact{
+    background-color: #F2EBDF;
 }
 .h2contacto{
     position: relative;
     top: 7rem;
 }
 .footercontact{
-    background-color: white;
+    height: 20rem;
+    position: relative;
+    top: -6rem;
 }
 .divfooter2{
     display: flex;
@@ -534,6 +535,10 @@ nav ul {
 }
 #copycontact{
     top: 10rem;
+}
+.form-body{
+    background-color: #F2EBDF;
+
 }
 .form-holder {
     display: flex;
@@ -558,11 +563,10 @@ nav ul {
     padding: 60px;
 }
 .form-content .form-items {
-    border: 3px solid black;
+
     padding: 40px;
     display: inline-block;
     width: 100%;
-    min-width: 540px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -650,7 +654,7 @@ nav ul {
     padding-top: 1rem;
 }
 .footer3 {
-    top: 14rem;
+    top: 0rem;
     height: 25rem;
 }
 .divfooter {
@@ -741,6 +745,9 @@ ul li {
     .div2tienda ul {
         flex-direction: column;
         align-items: center;
+    }
+    .section2viajes{
+        height: 44rem;
     }
 }
 /*TERMINA MEDIA QUERIES TIENDA */
@@ -843,6 +850,8 @@ ul li {
         gap: 2rem;
     }
 }
+
+
 /*TERMINA MEDIA QUERIES INDEX*/
 @-webkit-keyframes shadow-drop-center {
     0% {

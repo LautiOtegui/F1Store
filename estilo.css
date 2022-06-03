@@ -284,7 +284,6 @@ h2 {
 
 .pcontacto {
   position: relative;
-  top: 4rem;
   text-align: center;
 }
 
@@ -649,6 +648,11 @@ nav ul {
   background-attachment: fixed;
 }
 
+.contactsec {
+  background-color: #F2EBDF;
+  height: 25rem;
+}
+
 .h2call {
   text-align: center;
   margin-bottom: 2rem;
@@ -668,16 +672,8 @@ nav ul {
   gap: 1rem;
 }
 
-.ubicacion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  top: 5.5rem;
-  left: 41rem;
+.bodycontact {
+  background-color: #F2EBDF;
 }
 
 .h2contacto {
@@ -686,7 +682,9 @@ nav ul {
 }
 
 .footercontact {
-  background-color: white;
+  height: 20rem;
+  position: relative;
+  top: -6rem;
 }
 
 .divfooter2 {
@@ -703,6 +701,10 @@ nav ul {
 
 #copycontact {
   top: 10rem;
+}
+
+.form-body {
+  background-color: #F2EBDF;
 }
 
 .form-holder {
@@ -739,11 +741,9 @@ nav ul {
 }
 
 .form-content .form-items {
-  border: 3px solid black;
   padding: 40px;
   display: inline-block;
   width: 100%;
-  min-width: 540px;
   border-radius: 10px;
   text-align: left;
   -webkit-transition: all 0.4s ease;
@@ -841,7 +841,7 @@ nav ul {
 }
 
 .footer3 {
-  top: 14rem;
+  top: 0rem;
   height: 25rem;
 }
 
@@ -967,6 +967,9 @@ ul li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .section2viajes {
+    height: 44rem;
   }
 }
 
